@@ -10,7 +10,8 @@ const SkillTreeView: React.FC = () => {
 
   return (
     <div className="skill-tree-container">
-      <h1>Learning Path Skill Tree</h1>
+      <h1>Proof of Concept</h1>
+      <h2>AI Career and Training Plan</h2>
       <SkillTree nodes={nodes} links={links} />
     </div>
   );

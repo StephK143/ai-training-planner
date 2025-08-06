@@ -20,12 +20,12 @@ class TrainingPlanner:
         course_data = load_courses()
 
         # Convert to objects
-        for badge_dict in badge_data:
+        for badge_id, badge_dict in badge_data.items():
             badge = Badge.from_dict(badge_dict)
             self.badges[badge.id] = badge
             self.graph.add_node(f"badge_{badge.id}", type="badge", name=badge.name)
 
-        for course_dict in course_data:
+        for course_id, course_dict in course_data.items():
             course = Course.from_dict(course_dict)
             self.courses[course.id] = course
             self.graph.add_node(f"course_{course.id}", type="course", name=course.name)

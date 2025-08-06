@@ -15,7 +15,7 @@ CORS(app)  # Enable CORS for all routes
 # Configure for development
 app.config['DEBUG'] = True
 app.config['ENV'] = 'development'
-PORT = 5001  # Changed from 5000 to avoid conflicts
+PORT = 5002  # Changed to 5002 to avoid conflicts with AirPlay and other services
 
 try:
     planner = TrainingPlanner()
