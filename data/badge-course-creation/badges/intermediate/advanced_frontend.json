@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_frontend_001",
+  "title": "Advanced Frontend Development",
+  "description": "Master modern frontend frameworks, state management, and advanced UI patterns",
+  "level": "intermediate",
+  "courses": [
+    "frontend_frameworks_201",
+    "state_management_202",
+    "ui_patterns_203"
+  ],
+  "skills": [
+    "modern frameworks",
+    "state management",
+    "UI architecture",
+    "performance optimization",
+    "responsive design",
+    "accessibility"
+  ]
+}

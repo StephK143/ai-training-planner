@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_automation_001",
+  "title": "Advanced Automation Engineering",
+  "description": "Design and implement advanced automation solutions across the development lifecycle",
+  "level": "intermediate",
+  "courses": [
+    "automation_patterns_201",
+    "infrastructure_automation_202",
+    "process_automation_203"
+  ],
+  "skills": [
+    "automation patterns",
+    "infrastructure as code",
+    "process automation",
+    "configuration management",
+    "deployment automation",
+    "testing automation"
+  ]
+}

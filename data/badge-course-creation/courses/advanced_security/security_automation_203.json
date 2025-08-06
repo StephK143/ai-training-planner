@@ -1,0 +1,24 @@
+{
+  "id": "security_automation_203",
+  "title": "Security Automation & Orchestration",
+  "description": "Learn advanced security automation and orchestration techniques",
+  "hours": 18,
+  "url": "https://example.com/courses/security-automation-203",
+  "relatedBadge": "intermediate_security_001",
+  "topics": [
+    "Security automation frameworks",
+    "SOAR platforms",
+    "Automated incident response",
+    "Security tooling integration",
+    "Workflow automation",
+    "Compliance automation",
+    "Automated security testing",
+    "Metrics and reporting"
+  ],
+  "prerequisites": ["security_fundamentals_101"],
+  "projects": [
+    "Security automation pipeline",
+    "Incident response automation",
+    "Compliance checking automation"
+  ]
+}

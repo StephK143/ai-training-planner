@@ -1,0 +1,24 @@
+{
+  "id": "data_modeling_202",
+  "title": "Advanced Data Modeling",
+  "description": "Learn advanced data modeling techniques and patterns",
+  "hours": 15,
+  "url": "https://example.com/courses/data-modeling-202",
+  "relatedBadge": "intermediate_data_001",
+  "topics": [
+    "Dimensional modeling",
+    "Data warehouse design",
+    "Schema optimization",
+    "Data normalization",
+    "Entity relationships",
+    "JSON schema design",
+    "Graph databases",
+    "Time-series data"
+  ],
+  "prerequisites": ["sql_basics_101"],
+  "projects": [
+    "Data model design",
+    "Warehouse schema",
+    "Graph database model"
+  ]
+}

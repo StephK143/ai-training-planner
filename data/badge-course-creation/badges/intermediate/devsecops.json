@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_devsecops_001",
+  "title": "DevSecOps Practices",
+  "description": "Implement security throughout the development lifecycle using DevSecOps practices",
+  "level": "intermediate",
+  "courses": [
+    "devsecops_201",
+    "security_automation_202",
+    "compliance_automation_203"
+  ],
+  "skills": [
+    "security automation",
+    "compliance as code",
+    "secure pipelines",
+    "vulnerability management",
+    "security testing",
+    "security monitoring"
+  ]
+}

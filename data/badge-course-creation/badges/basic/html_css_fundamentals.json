@@ -1,0 +1,19 @@
+{
+  "id": "basic_htmlcss_001",
+  "title": "HTML/CSS Fundamentals",
+  "description": "Master the fundamentals of web markup and styling, including modern HTML5 and CSS3 features",
+  "level": "basic",
+  "courses": [
+    "html_basics_101",
+    "css_basics_102",
+    "responsive_design_103"
+  ],
+  "skills": [
+    "HTML5 semantics",
+    "CSS3 properties",
+    "responsive design",
+    "flexbox/grid",
+    "forms",
+    "accessibility basics"
+  ]
+}

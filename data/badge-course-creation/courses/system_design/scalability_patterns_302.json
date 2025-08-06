@@ -1,0 +1,24 @@
+{
+  "id": "scalability_patterns_302",
+  "title": "Advanced Scalability Patterns",
+  "description": "Master advanced scalability patterns and practices",
+  "hours": 25,
+  "url": "https://example.com/courses/scalability-patterns-302",
+  "relatedBadge": "expert_sysdesign_001",
+  "topics": [
+    "Horizontal scaling",
+    "Vertical scaling",
+    "Data sharding",
+    "Load balancing",
+    "Caching strategies",
+    "Queue systems",
+    "Database scaling",
+    "Stateless design"
+  ],
+  "prerequisites": ["scalability_patterns_202"],
+  "projects": [
+    "Scaling strategy",
+    "Load balancer",
+    "Database sharding"
+  ]
+}

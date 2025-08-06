@@ -1,0 +1,24 @@
+{
+  "id": "js_async_103",
+  "title": "Asynchronous JavaScript Programming",
+  "description": "Deep dive into asynchronous programming patterns and modern JavaScript features",
+  "hours": 10,
+  "url": "https://example.com/courses/js-async-103",
+  "relatedBadge": "basic_js_001",
+  "topics": [
+    "Callbacks and promises",
+    "Async/await patterns",
+    "Event loop",
+    "Web Workers",
+    "Fetch API",
+    "WebSocket basics",
+    "Error handling in async code",
+    "Performance optimization"
+  ],
+  "prerequisites": ["js_basics_101", "js_dom_102"],
+  "projects": [
+    "Real-time data dashboard",
+    "Multi-threaded calculator",
+    "API integration project"
+  ]
+}

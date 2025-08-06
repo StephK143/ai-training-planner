@@ -1,0 +1,24 @@
+{
+  "id": "platform_engineering_302",
+  "title": "Platform Engineering",
+  "description": "Design and implement internal developer platforms",
+  "hours": 25,
+  "url": "https://example.com/courses/platform-engineering-302",
+  "relatedBadge": "expert_devops_001",
+  "topics": [
+    "Platform design",
+    "Developer experience",
+    "Self-service platforms",
+    "API design",
+    "Infrastructure automation",
+    "Service catalogs",
+    "Platform security",
+    "Platform operations"
+  ],
+  "prerequisites": ["infrastructure_automation_202"],
+  "projects": [
+    "Platform architecture",
+    "Self-service system",
+    "Developer portal"
+  ]
+}

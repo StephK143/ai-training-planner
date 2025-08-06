@@ -1,0 +1,24 @@
+{
+  "id": "python_functions_102",
+  "title": "Advanced Python Functions and Modules",
+  "description": "Deep dive into Python functions, modules, packages, and functional programming concepts",
+  "hours": 8,
+  "url": "https://example.com/courses/python-functions-102",
+  "relatedBadge": "basic_python_001",
+  "topics": [
+    "Advanced function concepts",
+    "Decorators and generators",
+    "Lambda functions",
+    "Module creation and packaging",
+    "Virtual environments",
+    "Package management with pip",
+    "Unit testing basics",
+    "Documentation best practices"
+  ],
+  "prerequisites": ["python_basics_101"],
+  "projects": [
+    "Custom module creation",
+    "Command line utility",
+    "Test-driven development exercise"
+  ]
+}

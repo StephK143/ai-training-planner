@@ -1,0 +1,24 @@
+{
+  "id": "threat_hunting_302",
+  "title": "Advanced Threat Hunting",
+  "description": "Master advanced threat hunting and detection techniques",
+  "hours": 25,
+  "url": "https://example.com/courses/threat-hunting-302",
+  "relatedBadge": "expert_security_001",
+  "topics": [
+    "Threat intelligence",
+    "Hunt methodologies",
+    "Detection engineering",
+    "MITRE ATT&CK",
+    "Behavioral analysis",
+    "Log analysis",
+    "Forensics",
+    "Hunt automation"
+  ],
+  "prerequisites": ["threat_modeling_202"],
+  "projects": [
+    "Hunt program",
+    "Detection engineering",
+    "Analysis framework"
+  ]
+}

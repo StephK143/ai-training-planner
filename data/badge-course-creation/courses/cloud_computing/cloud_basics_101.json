@@ -1,0 +1,24 @@
+{
+  "id": "cloud_basics_101",
+  "title": "Cloud Computing Fundamentals",
+  "description": "Learn core cloud computing concepts, service models, and deployment patterns",
+  "hours": 8,
+  "url": "https://example.com/courses/cloud-basics-101",
+  "relatedBadge": "basic_cloud_001",
+  "topics": [
+    "Cloud computing concepts",
+    "Service models (IaaS/PaaS/SaaS)",
+    "Deployment models",
+    "Cloud architecture basics",
+    "Virtualization concepts",
+    "Resource management",
+    "Cost optimization",
+    "Cloud providers overview"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Cloud architecture design",
+    "Service model selection",
+    "Cost estimation"
+  ]
+}

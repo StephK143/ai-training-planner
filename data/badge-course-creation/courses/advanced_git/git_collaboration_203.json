@@ -1,0 +1,24 @@
+{
+  "id": "git_collaboration_203",
+  "title": "Git for Large Teams",
+  "description": "Master Git practices for large-scale team collaboration and enterprise projects",
+  "hours": 10,
+  "url": "https://example.com/courses/git-collaboration-203",
+  "relatedBadge": "intermediate_git_001",
+  "topics": [
+    "Scaling Git workflows",
+    "Multi-team collaboration",
+    "Code organization",
+    "Dependency management",
+    "Repository governance",
+    "Automation patterns",
+    "Performance optimization",
+    "Documentation practices"
+  ],
+  "prerequisites": ["git_advanced_201", "git_workflow_202"],
+  "projects": [
+    "Enterprise workflow design",
+    "Collaboration guidelines",
+    "Automation framework"
+  ]
+}

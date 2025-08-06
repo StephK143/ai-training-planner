@@ -1,0 +1,24 @@
+{
+  "id": "system_security_103",
+  "title": "System Security and Maintenance",
+  "description": "Learn system security fundamentals, maintenance procedures, and monitoring practices",
+  "hours": 10,
+  "url": "https://example.com/courses/system-security-103",
+  "relatedBadge": "basic_sysadmin_001",
+  "topics": [
+    "Security hardening",
+    "System updates",
+    "Security auditing",
+    "Log management",
+    "Backup solutions",
+    "Disaster recovery",
+    "Performance tuning",
+    "Compliance basics"
+  ],
+  "prerequisites": ["sysadmin_basics_101", "user_management_102"],
+  "projects": [
+    "Security audit report",
+    "Backup system implementation",
+    "Monitoring dashboard"
+  ]
+}

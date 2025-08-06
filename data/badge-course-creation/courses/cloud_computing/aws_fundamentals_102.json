@@ -1,0 +1,24 @@
+{
+  "id": "aws_fundamentals_102",
+  "title": "AWS Core Services",
+  "description": "Master fundamental AWS services and their implementation",
+  "hours": 10,
+  "url": "https://example.com/courses/aws-fundamentals-102",
+  "relatedBadge": "basic_cloud_001",
+  "topics": [
+    "AWS core services",
+    "EC2 and VPC",
+    "S3 storage",
+    "IAM basics",
+    "RDS fundamentals",
+    "Lambda introduction",
+    "CloudWatch basics",
+    "AWS CLI"
+  ],
+  "prerequisites": ["cloud_basics_101"],
+  "projects": [
+    "AWS infrastructure setup",
+    "Serverless application",
+    "Monitoring implementation"
+  ]
+}

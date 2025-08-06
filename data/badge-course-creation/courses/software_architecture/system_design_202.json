@@ -1,0 +1,24 @@
+{
+  "id": "system_design_202",
+  "title": "System Design Principles",
+  "description": "Learn and apply system design principles and practices",
+  "hours": 15,
+  "url": "https://example.com/courses/system-design-202",
+  "relatedBadge": "intermediate_architecture_001",
+  "topics": [
+    "System requirements",
+    "Component design",
+    "Data modeling",
+    "API design",
+    "Scalability",
+    "Performance",
+    "Security design",
+    "System integration"
+  ],
+  "prerequisites": ["design_patterns_101"],
+  "projects": [
+    "System design",
+    "Architecture proposal",
+    "Design documentation"
+  ]
+}

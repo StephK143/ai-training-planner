@@ -1,0 +1,24 @@
+{
+  "id": "sql_queries_102",
+  "title": "Advanced Querying and Data Analysis",
+  "description": "Master intermediate SQL query techniques including joins, aggregations, and subqueries. Learn how to analyze data effectively using SQL's analytical capabilities.",
+  "hours": 8,
+  "url": "https://example.com/courses/sql-queries-102",
+  "relatedBadge": "basic_sql_001",
+  "topics": [
+    "JOIN operations (INNER, LEFT, RIGHT, FULL)",
+    "Aggregate functions (COUNT, SUM, AVG, etc.)",
+    "GROUP BY and HAVING clauses",
+    "Subqueries and nested queries",
+    "Common Table Expressions (CTEs)",
+    "Using multiple tables in queries",
+    "NULL handling",
+    "String and date functions"
+  ],
+  "prerequisites": ["sql_basics_101"],
+  "projects": [
+    "Build complex queries for data analysis",
+    "Create reports using aggregations",
+    "Solve real-world data problems"
+  ]
+}

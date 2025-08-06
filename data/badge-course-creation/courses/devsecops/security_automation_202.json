@@ -1,0 +1,24 @@
+{
+  "id": "security_automation_202",
+  "title": "Security Automation",
+  "description": "Implement comprehensive security automation solutions",
+  "hours": 15,
+  "url": "https://example.com/courses/security-automation-202",
+  "relatedBadge": "intermediate_devsecops_001",
+  "topics": [
+    "Security tools",
+    "Vulnerability scanning",
+    "SAST/DAST",
+    "Secret management",
+    "Policy as code",
+    "Security testing",
+    "Compliance checking",
+    "Incident response"
+  ],
+  "prerequisites": ["security_basics_101"],
+  "projects": [
+    "Security automation",
+    "Scanning pipeline",
+    "Policy automation"
+  ]
+}

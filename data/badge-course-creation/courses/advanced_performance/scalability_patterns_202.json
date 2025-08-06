@@ -1,0 +1,24 @@
+{
+  "id": "scalability_patterns_202",
+  "title": "Scalability Engineering",
+  "description": "Learn and implement advanced scalability patterns",
+  "hours": 15,
+  "url": "https://example.com/courses/scalability-patterns-202",
+  "relatedBadge": "intermediate_performance_001",
+  "topics": [
+    "Scalability patterns",
+    "Distributed systems",
+    "Load balancing",
+    "Service mesh",
+    "Data partitioning",
+    "CAP theorem",
+    "Eventual consistency",
+    "Horizontal scaling"
+  ],
+  "prerequisites": ["performance_basics_101"],
+  "projects": [
+    "Scalability design",
+    "Load balancer setup",
+    "Data partitioning"
+  ]
+}

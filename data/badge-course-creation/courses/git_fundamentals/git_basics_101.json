@@ -1,0 +1,8 @@
+{
+  "id": "git_basics_101",
+  "title": "Introduction to Version Control with Git",
+  "description": "Learn the fundamentals of version control and why it's essential in modern software development. Master the basic Git commands and understand the Git workflow.",
+  "hours": 4,
+  "url": "https://example.com/courses/git-basics-101",
+  "relatedBadge": "basic_git_001"
+}

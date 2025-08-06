@@ -1,0 +1,24 @@
+{
+  "id": "docker_compose_103",
+  "title": "Docker Compose and Multi-Container Applications",
+  "description": "Learn to manage multi-container applications with Docker Compose",
+  "hours": 8,
+  "url": "https://example.com/courses/docker-compose-103",
+  "relatedBadge": "basic_docker_001",
+  "topics": [
+    "Docker Compose basics",
+    "Compose file structure",
+    "Service definitions",
+    "Environment configuration",
+    "Multi-container networking",
+    "Volume sharing",
+    "Container dependencies",
+    "Development workflows"
+  ],
+  "prerequisites": ["docker_basics_101", "container_ops_102"],
+  "projects": [
+    "Web application stack",
+    "Development environment",
+    "Microservices demo"
+  ]
+}

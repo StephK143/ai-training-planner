@@ -1,0 +1,24 @@
+{
+  "id": "system_integration_303",
+  "title": "Advanced System Integration",
+  "description": "Master system integration patterns and practices",
+  "hours": 25,
+  "url": "https://example.com/courses/system-integration-303",
+  "relatedBadge": "expert_sysdesign_001",
+  "topics": [
+    "Integration patterns",
+    "API design",
+    "Event systems",
+    "Message queues",
+    "Service mesh",
+    "Protocol design",
+    "Data integration",
+    "Security integration"
+  ],
+  "prerequisites": ["integration_patterns_203"],
+  "projects": [
+    "Integration design",
+    "API gateway",
+    "Event system"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "security_operations_303",
+  "title": "Security Operations Engineering",
+  "description": "Design and implement advanced security operations",
+  "hours": 25,
+  "url": "https://example.com/courses/security-operations-303",
+  "relatedBadge": "expert_security_001",
+  "topics": [
+    "SOC architecture",
+    "Incident response",
+    "SIEM engineering",
+    "Alert tuning",
+    "Automation frameworks",
+    "Playbook development",
+    "Case management",
+    "Metrics & reporting"
+  ],
+  "prerequisites": ["security_automation_203"],
+  "projects": [
+    "SOC implementation",
+    "SIEM engineering",
+    "Response automation"
+  ]
+}

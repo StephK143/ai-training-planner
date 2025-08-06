@@ -1,0 +1,24 @@
+{
+  "id": "cloud_architecture_201",
+  "title": "Cloud Architecture Patterns",
+  "description": "Master cloud architecture patterns and best practices",
+  "hours": 18,
+  "url": "https://example.com/courses/cloud-architecture-201",
+  "relatedBadge": "intermediate_cloud_001",
+  "topics": [
+    "Architecture patterns",
+    "Service models",
+    "Resource management",
+    "High availability",
+    "Disaster recovery",
+    "Cost optimization",
+    "Multi-cloud design",
+    "Cloud migration"
+  ],
+  "prerequisites": ["cloud_basics_101"],
+  "projects": [
+    "Architecture design",
+    "HA implementation",
+    "DR planning"
+  ]
+}

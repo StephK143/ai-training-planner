@@ -1,0 +1,24 @@
+{
+  "id": "process_automation_203",
+  "title": "Process & Workflow Automation",
+  "description": "Design and implement advanced process automation solutions",
+  "hours": 15,
+  "url": "https://example.com/courses/process-automation-203",
+  "relatedBadge": "intermediate_automation_001",
+  "topics": [
+    "Business process automation",
+    "Workflow engines",
+    "Decision automation",
+    "Integration patterns",
+    "Task orchestration",
+    "Event processing",
+    "Monitoring automation",
+    "Reporting automation"
+  ],
+  "prerequisites": ["automation_basics_103"],
+  "projects": [
+    "Workflow implementation",
+    "Process automation",
+    "Integration system"
+  ]
+}

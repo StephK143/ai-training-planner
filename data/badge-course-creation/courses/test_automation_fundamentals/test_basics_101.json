@@ -1,0 +1,24 @@
+{
+  "id": "test_basics_101",
+  "title": "Software Testing Fundamentals",
+  "description": "Learn core testing concepts, methodologies, and best practices",
+  "hours": 8,
+  "url": "https://example.com/courses/test-basics-101",
+  "relatedBadge": "basic_testing_001",
+  "topics": [
+    "Testing fundamentals",
+    "Test types and levels",
+    "Test planning",
+    "Test case design",
+    "Testing methodologies",
+    "Bug reporting",
+    "Test documentation",
+    "Quality metrics"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Test plan creation",
+    "Test case development",
+    "Bug tracking system"
+  ]
+}

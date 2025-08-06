@@ -1,0 +1,19 @@
+{
+  "id": "expert_security_001",
+  "title": "Expert Security Engineering",
+  "description": "Lead security architecture and operations at enterprise scale with advanced threat detection and response",
+  "level": "expert",
+  "courses": [
+    "security_architecture_301",
+    "threat_hunting_302",
+    "security_operations_303"
+  ],
+  "skills": [
+    "security architecture",
+    "advanced threat hunting",
+    "security operations",
+    "zero trust architecture",
+    "security automation",
+    "incident response management"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "file_system_102",
+  "title": "Linux File System and Permissions",
+  "description": "Learn file system hierarchy, permissions, ownership, and advanced file operations in Linux",
+  "hours": 8,
+  "url": "https://example.com/courses/file-system-102",
+  "relatedBadge": "basic_linux_001",
+  "topics": [
+    "File system hierarchy standard",
+    "File permissions and ownership",
+    "User and group management",
+    "Special permissions",
+    "Hard and symbolic links",
+    "File search and location",
+    "Archive and compression",
+    "Disk management basics"
+  ],
+  "prerequisites": ["linux_cli_101"],
+  "projects": [
+    "Permission management system",
+    "File system organization",
+    "Backup and archive creation"
+  ]
+}

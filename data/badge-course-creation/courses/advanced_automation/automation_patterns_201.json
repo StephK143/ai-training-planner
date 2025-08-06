@@ -1,0 +1,24 @@
+{
+  "id": "automation_patterns_201",
+  "title": "Advanced Automation Patterns",
+  "description": "Master advanced automation patterns and best practices",
+  "hours": 15,
+  "url": "https://example.com/courses/automation-patterns-201",
+  "relatedBadge": "intermediate_automation_001",
+  "topics": [
+    "Automation design patterns",
+    "Idempotency patterns",
+    "Error handling",
+    "State management",
+    "Event-driven automation",
+    "Workflow orchestration",
+    "Pipeline patterns",
+    "Testing strategies"
+  ],
+  "prerequisites": ["automation_basics_103"],
+  "projects": [
+    "Pattern implementation",
+    "Workflow orchestration",
+    "Error handling system"
+  ]
+}

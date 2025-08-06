@@ -1,0 +1,24 @@
+{
+  "id": "ds_basics_101",
+  "title": "Basic Data Structures",
+  "description": "Learn fundamental data structures and their implementations",
+  "hours": 10,
+  "url": "https://example.com/courses/ds-basics-101",
+  "relatedBadge": "basic_datastructures_001",
+  "topics": [
+    "Arrays and lists",
+    "Stacks and queues",
+    "Hash tables",
+    "Time complexity",
+    "Space complexity",
+    "Algorithm analysis",
+    "Memory management",
+    "Implementation patterns"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Custom data structure implementation",
+    "Performance analysis",
+    "Problem-solving exercises"
+  ]
+}

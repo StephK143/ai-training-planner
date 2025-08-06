@@ -1,0 +1,19 @@
+{
+  "id": "expert_devops_001",
+  "title": "Expert DevOps Engineering",
+  "description": "Master advanced DevOps practices, platform engineering, and enterprise-scale automation",
+  "level": "expert",
+  "courses": [
+    "enterprise_devops_301",
+    "platform_engineering_302",
+    "advanced_automation_303"
+  ],
+  "skills": [
+    "enterprise DevOps",
+    "platform engineering",
+    "GitOps practices",
+    "infrastructure as code",
+    "advanced pipeline design",
+    "DevOps culture transformation"
+  ]
+}

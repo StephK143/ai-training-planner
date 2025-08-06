@@ -1,0 +1,19 @@
+{
+  "id": "basic_cicd_001",
+  "title": "CI/CD Fundamentals",
+  "description": "Learn the basics of continuous integration and continuous delivery pipelines",
+  "level": "basic",
+  "courses": [
+    "cicd_basics_101",
+    "pipeline_fundamentals_102",
+    "automation_basics_103"
+  ],
+  "skills": [
+    "CI/CD concepts",
+    "pipeline basics",
+    "build automation",
+    "deployment basics",
+    "version control integration",
+    "automated testing"
+  ]
+}

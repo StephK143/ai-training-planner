@@ -1,0 +1,19 @@
+{
+  "id": "basic_security_001",
+  "title": "Basic Security Practices",
+  "description": "Understanding fundamental security concepts, common vulnerabilities, and basic security practices",
+  "level": "basic",
+  "courses": [
+    "security_fundamentals_101",
+    "web_security_102",
+    "secure_coding_103"
+  ],
+  "skills": [
+    "security fundamentals",
+    "OWASP Top 10",
+    "secure coding",
+    "authentication basics",
+    "encryption basics",
+    "security testing"
+  ]
+}

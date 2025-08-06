@@ -1,0 +1,24 @@
+{
+  "id": "analytics_engineering_303",
+  "title": "Analytics Engineering",
+  "description": "Master modern analytics engineering practices and tools",
+  "hours": 25,
+  "url": "https://example.com/courses/analytics-engineering-303",
+  "relatedBadge": "expert_data_001",
+  "topics": [
+    "Analytics architecture",
+    "Data modeling",
+    "ETL/ELT patterns",
+    "Data transformation",
+    "Data testing",
+    "Version control",
+    "CI/CD for data",
+    "Documentation"
+  ],
+  "prerequisites": ["data_modeling_202", "advanced_db_201"],
+  "projects": [
+    "Analytics pipeline",
+    "Data transformation",
+    "Testing framework"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "expert_perf_001",
+  "title": "Expert Performance Engineering",
+  "description": "Master advanced performance optimization, profiling, and scalability engineering",
+  "level": "expert",
+  "courses": [
+    "performance_optimization_301",
+    "scalability_engineering_302",
+    "performance_testing_303"
+  ],
+  "skills": [
+    "performance optimization",
+    "scalability engineering",
+    "load testing",
+    "profiling",
+    "bottleneck analysis",
+    "performance monitoring"
+  ]
+}

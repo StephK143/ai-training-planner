@@ -1,0 +1,24 @@
+{
+  "id": "secure_coding_103",
+  "title": "Secure Coding Practices",
+  "description": "Learn secure coding principles and implementation practices",
+  "hours": 10,
+  "url": "https://example.com/courses/secure-coding-103",
+  "relatedBadge": "basic_security_001",
+  "topics": [
+    "Secure coding guidelines",
+    "Code review practices",
+    "Security testing",
+    "Dependency management",
+    "Secure configuration",
+    "Error handling",
+    "Logging practices",
+    "Security automation"
+  ],
+  "prerequisites": ["security_fundamentals_101", "web_security_102"],
+  "projects": [
+    "Secure application development",
+    "Security automation tools",
+    "Code review process"
+  ]
+}

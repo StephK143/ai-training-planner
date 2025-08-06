@@ -1,0 +1,24 @@
+{
+  "id": "arch_patterns_201",
+  "title": "Architectural Patterns",
+  "description": "Master fundamental software architecture patterns",
+  "hours": 18,
+  "url": "https://example.com/courses/arch-patterns-201",
+  "relatedBadge": "intermediate_architecture_001",
+  "topics": [
+    "Design patterns",
+    "Architectural styles",
+    "Pattern languages",
+    "SOLID principles",
+    "Component design",
+    "Layer patterns",
+    "Clean architecture",
+    "Domain-driven design"
+  ],
+  "prerequisites": ["design_patterns_101"],
+  "projects": [
+    "Pattern implementation",
+    "Architecture design",
+    "System refactoring"
+  ]
+}

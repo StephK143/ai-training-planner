@@ -1,0 +1,24 @@
+{
+  "id": "reliability_engineering_302",
+  "title": "Advanced Reliability Engineering",
+  "description": "Design and implement highly reliable systems",
+  "hours": 25,
+  "url": "https://example.com/courses/reliability-engineering-302",
+  "relatedBadge": "expert_sre_001",
+  "topics": [
+    "Reliability patterns",
+    "Failure modes",
+    "Redundancy design",
+    "Disaster recovery",
+    "High availability",
+    "Performance reliability",
+    "Data reliability",
+    "System resilience"
+  ],
+  "prerequisites": ["observability_202"],
+  "projects": [
+    "Reliability design",
+    "DR implementation",
+    "HA system"
+  ]
+}

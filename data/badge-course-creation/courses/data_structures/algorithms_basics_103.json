@@ -1,0 +1,24 @@
+{
+  "id": "algorithms_basics_103",
+  "title": "Basic Algorithms and Problem Solving",
+  "description": "Learn fundamental algorithms and problem-solving strategies",
+  "hours": 10,
+  "url": "https://example.com/courses/algorithms-basics-103",
+  "relatedBadge": "basic_datastructures_001",
+  "topics": [
+    "Searching algorithms",
+    "Sorting algorithms",
+    "Divide and conquer",
+    "Dynamic programming intro",
+    "Greedy algorithms",
+    "Algorithm design",
+    "Problem-solving strategies",
+    "Optimization techniques"
+  ],
+  "prerequisites": ["ds_basics_101", "trees_graphs_102"],
+  "projects": [
+    "Algorithm implementation",
+    "Performance optimization",
+    "Real-world problem solving"
+  ]
+}

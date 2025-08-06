@@ -1,0 +1,19 @@
+{
+  "id": "expert_data_001",
+  "title": "Expert Data Engineering",
+  "description": "Design and implement enterprise-scale data platforms and advanced analytics solutions",
+  "level": "expert",
+  "courses": [
+    "data_architecture_301",
+    "data_platforms_302",
+    "analytics_engineering_303"
+  ],
+  "skills": [
+    "data architecture",
+    "data platforms",
+    "data modeling",
+    "ETL/ELT pipelines",
+    "data governance",
+    "analytics engineering"
+  ]
+}

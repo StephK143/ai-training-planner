@@ -1,0 +1,24 @@
+{
+  "id": "api_basics_101",
+  "title": "API Fundamentals and REST",
+  "description": "Learn API concepts, REST principles, and basic implementation patterns",
+  "hours": 8,
+  "url": "https://example.com/courses/api-basics-101",
+  "relatedBadge": "basic_api_001",
+  "topics": [
+    "API concepts",
+    "REST principles",
+    "HTTP methods",
+    "Status codes",
+    "Resource design",
+    "URL structure",
+    "Request/Response formats",
+    "API documentation"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Simple REST API",
+    "API documentation",
+    "Basic CRUD operations"
+  ]
+}

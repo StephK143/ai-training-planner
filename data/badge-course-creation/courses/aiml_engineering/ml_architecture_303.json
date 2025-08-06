@@ -1,0 +1,24 @@
+{
+  "id": "ml_architecture_303",
+  "title": "ML Systems Architecture",
+  "description": "Design and implement machine learning system architectures",
+  "hours": 25,
+  "url": "https://example.com/courses/ml-architecture-303",
+  "relatedBadge": "expert_aiml_001",
+  "topics": [
+    "ML system design",
+    "Distributed training",
+    "Feature engineering",
+    "Data pipelines",
+    "Model architecture",
+    "System integration",
+    "AI infrastructure",
+    "Security considerations"
+  ],
+  "prerequisites": ["ml_basics_201", "arch_patterns_201"],
+  "projects": [
+    "ML system design",
+    "Training infrastructure",
+    "Feature pipeline"
+  ]
+}

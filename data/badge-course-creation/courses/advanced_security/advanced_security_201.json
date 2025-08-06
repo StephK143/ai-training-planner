@@ -1,0 +1,24 @@
+{
+  "id": "advanced_security_201",
+  "title": "Advanced Security Architecture",
+  "description": "Master advanced security architecture principles and implementation patterns",
+  "hours": 15,
+  "url": "https://example.com/courses/advanced-security-201",
+  "relatedBadge": "intermediate_security_001",
+  "topics": [
+    "Security architecture patterns",
+    "Zero trust architecture",
+    "Identity management",
+    "Access control systems",
+    "Encryption strategies",
+    "Security automation",
+    "Threat modeling",
+    "Risk assessment"
+  ],
+  "prerequisites": ["security_fundamentals_101", "web_security_102"],
+  "projects": [
+    "Security architecture design",
+    "Zero trust implementation",
+    "Risk management framework"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "expert_aiml_001",
+  "title": "Expert AI/ML Engineering",
+  "description": "Design and implement production-grade machine learning systems and MLOps practices",
+  "level": "expert",
+  "courses": [
+    "mlops_301",
+    "production_ml_302",
+    "ml_architecture_303"
+  ],
+  "skills": [
+    "MLOps practices",
+    "ML architecture",
+    "model deployment",
+    "feature engineering",
+    "model monitoring",
+    "AI infrastructure"
+  ]
+}

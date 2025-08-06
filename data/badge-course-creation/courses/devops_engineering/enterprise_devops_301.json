@@ -1,0 +1,24 @@
+{
+  "id": "enterprise_devops_301",
+  "title": "Enterprise DevOps Practices",
+  "description": "Implement enterprise-scale DevOps practices and transformations",
+  "hours": 30,
+  "url": "https://example.com/courses/enterprise-devops-301",
+  "relatedBadge": "expert_devops_001",
+  "topics": [
+    "Enterprise patterns",
+    "DevOps transformation",
+    "Change management",
+    "Process optimization",
+    "Cultural alignment",
+    "Toolchain strategy",
+    "Metrics & KPIs",
+    "Organizational design"
+  ],
+  "prerequisites": ["advanced_automation_202", "devsecops_201"],
+  "projects": [
+    "DevOps transformation",
+    "Process optimization",
+    "Metrics framework"
+  ]
+}

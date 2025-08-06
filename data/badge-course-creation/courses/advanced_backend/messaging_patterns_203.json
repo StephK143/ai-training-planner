@@ -1,0 +1,24 @@
+{
+  "id": "messaging_patterns_203",
+  "title": "Advanced Messaging Patterns",
+  "description": "Master advanced messaging patterns and event-driven architecture",
+  "hours": 15,
+  "url": "https://example.com/courses/messaging-patterns-203",
+  "relatedBadge": "intermediate_backend_001",
+  "topics": [
+    "Message queuing",
+    "Pub/sub patterns",
+    "Event-driven architecture",
+    "Message brokers",
+    "Async processing",
+    "Event sourcing",
+    "Stream processing",
+    "Integration patterns"
+  ],
+  "prerequisites": ["api_basics_101"],
+  "projects": [
+    "Message system",
+    "Event processing",
+    "Integration patterns"
+  ]
+}

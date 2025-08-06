@@ -1,0 +1,24 @@
+{
+  "id": "js_dom_102",
+  "title": "DOM Manipulation and Events",
+  "description": "Master Document Object Model manipulation and event handling in JavaScript",
+  "hours": 8,
+  "url": "https://example.com/courses/js-dom-102",
+  "relatedBadge": "basic_js_001",
+  "topics": [
+    "DOM structure",
+    "Element selection and manipulation",
+    "Event handling",
+    "Event delegation",
+    "DOM traversal",
+    "Form handling",
+    "Browser storage",
+    "Performance considerations"
+  ],
+  "prerequisites": ["js_basics_101"],
+  "projects": [
+    "Interactive form validation",
+    "Dynamic content loader",
+    "Custom event system"
+  ]
+}

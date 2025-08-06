@@ -1,0 +1,24 @@
+{
+  "id": "architecture_governance_302",
+  "title": "Architecture Governance",
+  "description": "Implement effective architecture governance frameworks",
+  "hours": 25,
+  "url": "https://example.com/courses/architecture-governance-302",
+  "relatedBadge": "expert_techlead_001",
+  "topics": [
+    "Governance frameworks",
+    "Architecture review",
+    "Standards compliance",
+    "Technical debt",
+    "Quality gates",
+    "Design principles",
+    "Documentation",
+    "Change management"
+  ],
+  "prerequisites": ["arch_patterns_201"],
+  "projects": [
+    "Governance framework",
+    "Review process",
+    "Standards guide"
+  ]
+}

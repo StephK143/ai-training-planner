@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_monitoring_001",
+  "title": "Advanced Monitoring & Observability",
+  "description": "Implement comprehensive monitoring solutions and observability practices",
+  "level": "intermediate",
+  "courses": [
+    "monitoring_201",
+    "observability_202",
+    "alerting_203"
+  ],
+  "skills": [
+    "monitoring systems",
+    "observability",
+    "log aggregation",
+    "metrics collection",
+    "alerting strategies",
+    "dashboard design"
+  ]
+}

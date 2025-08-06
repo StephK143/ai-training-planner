@@ -1,0 +1,24 @@
+{
+  "id": "mlops_301",
+  "title": "Advanced MLOps Practices",
+  "description": "Master MLOps practices for production machine learning systems",
+  "hours": 25,
+  "url": "https://example.com/courses/mlops-301",
+  "relatedBadge": "expert_aiml_001",
+  "topics": [
+    "ML pipelines",
+    "Model versioning",
+    "Feature stores",
+    "Experiment tracking",
+    "Model registry",
+    "Automated retraining",
+    "A/B testing",
+    "Model monitoring"
+  ],
+  "prerequisites": ["ml_basics_201", "devops_basics_201"],
+  "projects": [
+    "ML pipeline implementation",
+    "Feature store setup",
+    "Model monitoring system"
+  ]
+}

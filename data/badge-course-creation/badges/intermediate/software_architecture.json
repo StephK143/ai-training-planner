@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_architecture_001",
+  "title": "Software Architecture Fundamentals",
+  "description": "Design and implement software systems using established architectural patterns",
+  "level": "intermediate",
+  "courses": [
+    "arch_patterns_201",
+    "system_design_202",
+    "integration_patterns_203"
+  ],
+  "skills": [
+    "architectural patterns",
+    "system design",
+    "integration patterns",
+    "scalability design",
+    "microservices",
+    "event-driven architecture"
+  ]
+}

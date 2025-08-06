@@ -1,0 +1,24 @@
+{
+  "id": "chaos_engineering_303",
+  "title": "Chaos Engineering",
+  "description": "Master chaos engineering principles and implementation",
+  "hours": 25,
+  "url": "https://example.com/courses/chaos-engineering-303",
+  "relatedBadge": "expert_sre_001",
+  "topics": [
+    "Chaos principles",
+    "Experiment design",
+    "Failure injection",
+    "System boundaries",
+    "Safety practices",
+    "Monitoring integration",
+    "Results analysis",
+    "Continuous verification"
+  ],
+  "prerequisites": ["reliability_engineering_302"],
+  "projects": [
+    "Chaos framework",
+    "Experiment design",
+    "System verification"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "frontend_frameworks_201",
+  "title": "Modern Frontend Frameworks",
+  "description": "Master modern frontend frameworks and architecture",
+  "hours": 18,
+  "url": "https://example.com/courses/frontend-frameworks-201",
+  "relatedBadge": "intermediate_frontend_001",
+  "topics": [
+    "React advanced patterns",
+    "Vue composition API",
+    "Angular architecture",
+    "Component design",
+    "Routing strategies",
+    "Build optimization",
+    "SSR/SSG",
+    "Module federation"
+  ],
+  "prerequisites": ["javascript_basics_101", "html_css_101"],
+  "projects": [
+    "Framework migration",
+    "Component library",
+    "SSR implementation"
+  ]
+}

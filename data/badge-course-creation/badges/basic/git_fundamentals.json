@@ -1,0 +1,19 @@
+{
+  "id": "basic_git_001",
+  "title": "Git Fundamentals",
+  "description": "Master the fundamental concepts of Git version control, including repositories, commits, branches, and basic workflow",
+  "level": "basic",
+  "courses": [
+    "git_basics_101",
+    "git_workflow_102",
+    "git_branching_103"
+  ],
+  "skills": [
+    "git init",
+    "git clone",
+    "git add/commit",
+    "git push/pull",
+    "branch management",
+    "merge basics"
+  ]
+}

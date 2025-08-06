@@ -1,0 +1,24 @@
+{
+  "id": "tech_leadership_301",
+  "title": "Technical Leadership",
+  "description": "Master technical leadership skills and practices",
+  "hours": 30,
+  "url": "https://example.com/courses/tech-leadership-301",
+  "relatedBadge": "expert_techlead_001",
+  "topics": [
+    "Leadership styles",
+    "Team building",
+    "Technical mentoring",
+    "Decision making",
+    "Conflict resolution",
+    "Communication skills",
+    "Performance management",
+    "Career development"
+  ],
+  "prerequisites": ["system_design_202"],
+  "projects": [
+    "Team leadership",
+    "Technical mentoring",
+    "Decision framework"
+  ]
+}

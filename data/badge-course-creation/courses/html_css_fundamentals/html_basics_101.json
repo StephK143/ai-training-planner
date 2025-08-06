@@ -1,0 +1,24 @@
+{
+  "id": "html_basics_101",
+  "title": "HTML5 Fundamentals",
+  "description": "Master modern HTML5 markup, semantic elements, and document structure",
+  "hours": 6,
+  "url": "https://example.com/courses/html-basics-101",
+  "relatedBadge": "basic_htmlcss_001",
+  "topics": [
+    "HTML5 document structure",
+    "Semantic elements",
+    "Forms and validation",
+    "Media elements",
+    "Metadata and SEO basics",
+    "Accessibility fundamentals",
+    "HTML best practices",
+    "Cross-browser compatibility"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Personal portfolio page",
+    "Semantic blog layout",
+    "Accessible form design"
+  ]
+}

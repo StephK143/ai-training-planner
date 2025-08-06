@@ -1,0 +1,24 @@
+{
+  "id": "backend_arch_201",
+  "title": "Advanced Backend Architecture",
+  "description": "Master advanced backend architecture patterns and practices",
+  "hours": 18,
+  "url": "https://example.com/courses/backend-arch-201",
+  "relatedBadge": "intermediate_backend_001",
+  "topics": [
+    "Architectural patterns",
+    "Domain-driven design",
+    "Service-oriented architecture",
+    "Microservices",
+    "Event sourcing",
+    "CQRS",
+    "Clean architecture",
+    "System boundaries"
+  ],
+  "prerequisites": ["api_basics_101"],
+  "projects": [
+    "Architecture design",
+    "Pattern implementation",
+    "System boundaries"
+  ]
+}

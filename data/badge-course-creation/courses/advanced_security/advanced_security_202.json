@@ -1,0 +1,24 @@
+{
+  "id": "advanced_security_202",
+  "title": "Security Compliance & Governance",
+  "description": "Learn advanced compliance frameworks and governance models",
+  "hours": 12,
+  "url": "https://example.com/courses/advanced-security-202",
+  "relatedBadge": "intermediate_security_001",
+  "topics": [
+    "Regulatory compliance frameworks",
+    "Security governance models",
+    "Audit processes",
+    "Policy development",
+    "Compliance automation",
+    "Documentation requirements",
+    "Control frameworks",
+    "Compliance monitoring"
+  ],
+  "prerequisites": ["security_fundamentals_101", "compliance_basics_102"],
+  "projects": [
+    "Compliance program development",
+    "Security policy framework",
+    "Automated compliance checks"
+  ]
+}

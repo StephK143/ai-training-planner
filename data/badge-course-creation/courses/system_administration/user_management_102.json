@@ -1,0 +1,24 @@
+{
+  "id": "user_management_102",
+  "title": "User and Resource Management",
+  "description": "Master user administration, permissions, and resource management in Linux systems",
+  "hours": 8,
+  "url": "https://example.com/courses/user-management-102",
+  "relatedBadge": "basic_sysadmin_001",
+  "topics": [
+    "Advanced user management",
+    "Group policies",
+    "Access control lists",
+    "Resource quotas",
+    "Storage management",
+    "Authentication systems",
+    "Directory services",
+    "Automation tools"
+  ],
+  "prerequisites": ["sysadmin_basics_101"],
+  "projects": [
+    "User policy implementation",
+    "Resource monitoring system",
+    "Automation scripts"
+  ]
+}

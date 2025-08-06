@@ -1,0 +1,24 @@
+{
+  "id": "security_fundamentals_101",
+  "title": "Security Fundamentals",
+  "description": "Learn core security concepts, threats, and basic protection mechanisms",
+  "hours": 8,
+  "url": "https://example.com/courses/security-fundamentals-101",
+  "relatedBadge": "basic_security_001",
+  "topics": [
+    "Security principles",
+    "Common threats",
+    "Authentication basics",
+    "Authorization concepts",
+    "Cryptography basics",
+    "Security policies",
+    "Risk assessment",
+    "Incident response"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Security assessment",
+    "Basic threat modeling",
+    "Security policy creation"
+  ]
+}

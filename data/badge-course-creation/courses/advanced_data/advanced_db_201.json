@@ -1,0 +1,24 @@
+{
+  "id": "advanced_db_201",
+  "title": "Advanced Database Systems",
+  "description": "Master advanced database concepts and implementation",
+  "hours": 18,
+  "url": "https://example.com/courses/advanced-db-201",
+  "relatedBadge": "intermediate_data_001",
+  "topics": [
+    "Advanced RDBMS concepts",
+    "NoSQL databases",
+    "Database replication",
+    "Sharding strategies",
+    "Transaction management",
+    "Backup and recovery",
+    "High availability",
+    "Database security"
+  ],
+  "prerequisites": ["sql_basics_101"],
+  "projects": [
+    "Replication setup",
+    "Sharding implementation",
+    "HA configuration"
+  ]
+}

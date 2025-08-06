@@ -1,0 +1,24 @@
+{
+  "id": "alerting_203",
+  "title": "Advanced Alerting Strategies",
+  "description": "Design and implement effective alerting systems",
+  "hours": 15,
+  "url": "https://example.com/courses/alerting-203",
+  "relatedBadge": "intermediate_monitoring_001",
+  "topics": [
+    "Alert design",
+    "Notification systems",
+    "Alert routing",
+    "On-call management",
+    "Alert correlation",
+    "Incident management",
+    "SLO-based alerts",
+    "Alert fatigue prevention"
+  ],
+  "prerequisites": ["monitoring_basics_101"],
+  "projects": [
+    "Alert system",
+    "Notification routing",
+    "On-call rotation"
+  ]
+}

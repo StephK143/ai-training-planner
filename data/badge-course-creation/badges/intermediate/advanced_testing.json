@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_testing_001",
+  "title": "Advanced Testing Practices",
+  "description": "Implement comprehensive testing strategies and advanced automation frameworks",
+  "level": "intermediate",
+  "courses": [
+    "test_strategy_201",
+    "advanced_automation_202",
+    "performance_testing_203"
+  ],
+  "skills": [
+    "test strategy",
+    "automation frameworks",
+    "performance testing",
+    "security testing",
+    "CI/CD integration",
+    "test metrics"
+  ]
+}

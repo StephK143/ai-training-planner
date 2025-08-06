@@ -1,0 +1,24 @@
+{
+  "id": "sql_basics_101",
+  "title": "Introduction to Databases and SQL",
+  "description": "Learn the fundamentals of relational databases and basic SQL concepts. Understand database structure, tables, relationships, and write basic queries to retrieve data.",
+  "hours": 6,
+  "url": "https://example.com/courses/sql-basics-101",
+  "relatedBadge": "basic_sql_001",
+  "topics": [
+    "Database concepts and terminology",
+    "Relational database principles",
+    "Basic SQL syntax",
+    "CREATE TABLE statements",
+    "Data types and constraints",
+    "Simple SELECT queries",
+    "WHERE clause and filtering",
+    "Basic sorting with ORDER BY"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Create your first database",
+    "Design basic tables",
+    "Write queries to explore data"
+  ]
+}

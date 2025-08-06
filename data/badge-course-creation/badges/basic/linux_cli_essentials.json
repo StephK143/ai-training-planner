@@ -1,0 +1,19 @@
+{
+  "id": "basic_linux_001",
+  "title": "Linux Command Line Essentials",
+  "description": "Develop proficiency in essential Linux command line operations, file system navigation, and basic shell scripting",
+  "level": "basic",
+  "courses": [
+    "linux_cli_101",
+    "file_system_102",
+    "bash_basics_103"
+  ],
+  "skills": [
+    "file system navigation",
+    "file manipulation",
+    "permissions management",
+    "process management",
+    "basic shell scripting",
+    "text file operations"
+  ]
+}

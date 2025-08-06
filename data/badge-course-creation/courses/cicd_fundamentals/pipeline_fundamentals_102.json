@@ -1,0 +1,24 @@
+{
+  "id": "pipeline_fundamentals_102",
+  "title": "Pipeline Design and Implementation",
+  "description": "Master CI/CD pipeline design and implementation strategies",
+  "hours": 10,
+  "url": "https://example.com/courses/pipeline-fundamentals-102",
+  "relatedBadge": "basic_cicd_001",
+  "topics": [
+    "Pipeline architecture",
+    "Jenkins fundamentals",
+    "GitHub Actions",
+    "Pipeline as code",
+    "Artifact management",
+    "Environment management",
+    "Pipeline security",
+    "Monitoring and logging"
+  ],
+  "prerequisites": ["cicd_basics_101"],
+  "projects": [
+    "Multi-stage pipeline",
+    "Pipeline as code implementation",
+    "Monitoring setup"
+  ]
+}

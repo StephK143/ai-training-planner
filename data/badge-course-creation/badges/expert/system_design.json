@@ -1,0 +1,19 @@
+{
+  "id": "expert_sysdesign_001",
+  "title": "Expert System Design",
+  "description": "Design and architect complex distributed systems at scale with advanced patterns",
+  "level": "expert",
+  "courses": [
+    "distributed_systems_301",
+    "scalability_patterns_302",
+    "system_integration_303"
+  ],
+  "skills": [
+    "system architecture",
+    "scalability patterns",
+    "distributed computing",
+    "system integration",
+    "performance optimization",
+    "capacity planning"
+  ]
+}

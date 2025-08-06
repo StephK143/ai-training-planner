@@ -1,0 +1,24 @@
+{
+  "id": "performance_testing_303",
+  "title": "Advanced Performance Testing",
+  "description": "Master advanced performance testing methodologies",
+  "hours": 25,
+  "url": "https://example.com/courses/performance-testing-303",
+  "relatedBadge": "expert_perf_001",
+  "topics": [
+    "Test methodologies",
+    "Load testing",
+    "Stress testing",
+    "Endurance testing",
+    "Spike testing",
+    "Scalability testing",
+    "Test automation",
+    "Results analysis"
+  ],
+  "prerequisites": ["load_testing_203"],
+  "projects": [
+    "Test framework",
+    "Load generation",
+    "Analysis system"
+  ]
+}

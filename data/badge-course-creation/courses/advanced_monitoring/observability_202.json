@@ -1,0 +1,24 @@
+{
+  "id": "observability_202",
+  "title": "System Observability",
+  "description": "Implement comprehensive observability solutions",
+  "hours": 18,
+  "url": "https://example.com/courses/observability-202",
+  "relatedBadge": "intermediate_monitoring_001",
+  "topics": [
+    "Observability patterns",
+    "Distributed tracing",
+    "Log aggregation",
+    "Event correlation",
+    "System telemetry",
+    "Debugging patterns",
+    "Visualization",
+    "Root cause analysis"
+  ],
+  "prerequisites": ["monitoring_basics_101"],
+  "projects": [
+    "Tracing setup",
+    "Log aggregation",
+    "Visualization system"
+  ]
+}

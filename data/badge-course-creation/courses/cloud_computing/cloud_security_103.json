@@ -1,0 +1,24 @@
+{
+  "id": "cloud_security_103",
+  "title": "Cloud Security Fundamentals",
+  "description": "Learn essential cloud security concepts and best practices",
+  "hours": 8,
+  "url": "https://example.com/courses/cloud-security-103",
+  "relatedBadge": "basic_cloud_001",
+  "topics": [
+    "Cloud security principles",
+    "Identity management",
+    "Access control",
+    "Data protection",
+    "Network security",
+    "Compliance basics",
+    "Security monitoring",
+    "Incident response"
+  ],
+  "prerequisites": ["cloud_basics_101", "aws_fundamentals_102"],
+  "projects": [
+    "Security architecture",
+    "Compliance framework",
+    "Security automation"
+  ]
+}

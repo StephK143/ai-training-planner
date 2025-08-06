@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_api_001",
+  "title": "Advanced API Development",
+  "description": "Master advanced API design patterns, security, and scalability considerations",
+  "level": "intermediate",
+  "courses": [
+    "api_design_201",
+    "api_security_202",
+    "api_scaling_203"
+  ],
+  "skills": [
+    "API design patterns",
+    "OAuth/OIDC",
+    "rate limiting",
+    "API gateways",
+    "versioning strategies",
+    "API documentation"
+  ]
+}

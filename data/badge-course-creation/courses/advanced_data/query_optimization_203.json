@@ -1,0 +1,24 @@
+{
+  "id": "query_optimization_203",
+  "title": "Query Optimization & Performance",
+  "description": "Master database query optimization and performance tuning",
+  "hours": 15,
+  "url": "https://example.com/courses/query-optimization-203",
+  "relatedBadge": "intermediate_data_001",
+  "topics": [
+    "Query optimization",
+    "Index strategies",
+    "Query planning",
+    "Performance tuning",
+    "Execution plans",
+    "Cache optimization",
+    "Statistics analysis",
+    "Query patterns"
+  ],
+  "prerequisites": ["sql_basics_101"],
+  "projects": [
+    "Query optimization",
+    "Index strategy",
+    "Performance tuning"
+  ]
+}

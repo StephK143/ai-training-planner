@@ -1,0 +1,24 @@
+{
+  "id": "system_design_303",
+  "title": "Advanced System Design",
+  "description": "Master advanced system design principles and practices",
+  "hours": 25,
+  "url": "https://example.com/courses/system-design-303",
+  "relatedBadge": "expert_softarch_001",
+  "topics": [
+    "System architecture",
+    "Scalability design",
+    "Performance design",
+    "Security design",
+    "Reliability design",
+    "Data architecture",
+    "API design",
+    "Infrastructure design"
+  ],
+  "prerequisites": ["system_design_202"],
+  "projects": [
+    "System design",
+    "Architecture review",
+    "Design documentation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "expert_cloud_001",
+  "title": "Expert Cloud Architecture",
+  "description": "Design and implement enterprise-scale cloud solutions with advanced security, compliance, and cost optimization",
+  "level": "expert",
+  "courses": [
+    "enterprise_cloud_301",
+    "cloud_governance_302",
+    "multicloud_strategy_303"
+  ],
+  "skills": [
+    "enterprise architecture",
+    "multi-cloud strategy",
+    "cloud governance",
+    "cloud security architecture",
+    "cost optimization",
+    "cloud center of excellence"
+  ]
+}

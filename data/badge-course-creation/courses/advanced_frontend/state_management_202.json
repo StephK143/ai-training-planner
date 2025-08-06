@@ -1,0 +1,24 @@
+{
+  "id": "state_management_202",
+  "title": "Frontend State Management",
+  "description": "Learn advanced state management patterns and implementation",
+  "hours": 15,
+  "url": "https://example.com/courses/state-management-202",
+  "relatedBadge": "intermediate_frontend_001",
+  "topics": [
+    "Redux patterns",
+    "MobX architecture",
+    "Vuex/Pinia",
+    "State machines",
+    "Immutable state",
+    "Server state",
+    "Cache management",
+    "State persistence"
+  ],
+  "prerequisites": ["javascript_basics_101"],
+  "projects": [
+    "State management",
+    "Cache implementation",
+    "State persistence"
+  ]
+}

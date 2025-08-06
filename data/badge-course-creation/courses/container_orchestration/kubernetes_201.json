@@ -1,0 +1,24 @@
+{
+  "id": "kubernetes_201",
+  "title": "Kubernetes Fundamentals",
+  "description": "Learn core Kubernetes concepts, architecture, and basic operations",
+  "hours": 15,
+  "url": "https://example.com/courses/kubernetes-201",
+  "relatedBadge": "intermediate_container_001",
+  "topics": [
+    "Kubernetes architecture",
+    "Pods and containers",
+    "Deployments",
+    "Services",
+    "ConfigMaps and Secrets",
+    "Storage concepts",
+    "Networking basics",
+    "kubectl operations"
+  ],
+  "prerequisites": ["docker_basics_101", "container_ops_102"],
+  "projects": [
+    "Application deployment",
+    "Service configuration",
+    "Basic cluster management"
+  ]
+}

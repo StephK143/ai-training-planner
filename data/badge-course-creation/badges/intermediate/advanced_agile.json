@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_agile_001",
+  "title": "Advanced Agile & Project Management",
+  "description": "Lead agile teams and implement advanced project management practices",
+  "level": "intermediate",
+  "courses": [
+    "agile_leadership_201",
+    "scaling_agile_202",
+    "project_management_203"
+  ],
+  "skills": [
+    "agile leadership",
+    "scaling methodologies",
+    "project management",
+    "risk management",
+    "team facilitation",
+    "metrics & reporting"
+  ]
+}

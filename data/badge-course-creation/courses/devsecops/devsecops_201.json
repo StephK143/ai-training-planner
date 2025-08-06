@@ -1,0 +1,24 @@
+{
+  "id": "devsecops_201",
+  "title": "DevSecOps Fundamentals",
+  "description": "Master fundamental DevSecOps practices and implementation",
+  "hours": 18,
+  "url": "https://example.com/courses/devsecops-201",
+  "relatedBadge": "intermediate_devsecops_001",
+  "topics": [
+    "Security as Code",
+    "Threat modeling",
+    "Secure development",
+    "Security testing",
+    "Infrastructure security",
+    "Container security",
+    "CI/CD security",
+    "Security monitoring"
+  ],
+  "prerequisites": ["security_basics_101", "cicd_basics_101"],
+  "projects": [
+    "Security pipeline",
+    "Security scanning",
+    "Secure deployment"
+  ]
+}

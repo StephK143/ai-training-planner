@@ -1,0 +1,24 @@
+{
+  "id": "cicd_basics_101",
+  "title": "CI/CD Fundamentals",
+  "description": "Learn core concepts of continuous integration and continuous delivery",
+  "hours": 8,
+  "url": "https://example.com/courses/cicd-basics-101",
+  "relatedBadge": "basic_cicd_001",
+  "topics": [
+    "CI/CD concepts",
+    "Pipeline basics",
+    "Version control integration",
+    "Build automation",
+    "Test automation",
+    "Deployment strategies",
+    "Quality gates",
+    "CI/CD tools overview"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Basic pipeline setup",
+    "Build automation",
+    "Test integration"
+  ]
+}

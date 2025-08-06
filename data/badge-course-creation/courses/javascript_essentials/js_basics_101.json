@@ -1,0 +1,24 @@
+{
+  "id": "js_basics_101",
+  "title": "JavaScript Core Concepts",
+  "description": "Learn fundamental JavaScript concepts, syntax, and modern ES6+ features",
+  "hours": 10,
+  "url": "https://example.com/courses/js-basics-101",
+  "relatedBadge": "basic_js_001",
+  "topics": [
+    "JavaScript fundamentals",
+    "Variables and data types",
+    "Functions and scope",
+    "ES6+ features",
+    "Arrays and objects",
+    "Promises and async/await",
+    "Error handling",
+    "Modern JavaScript practices"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Interactive web components",
+    "Async data handler",
+    "Modern JS utility library"
+  ]
+}

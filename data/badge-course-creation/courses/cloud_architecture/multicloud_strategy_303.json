@@ -1,0 +1,24 @@
+{
+  "id": "multicloud_strategy_303",
+  "title": "Multi-Cloud Strategy",
+  "description": "Design and implement effective multi-cloud solutions",
+  "hours": 25,
+  "url": "https://example.com/courses/multicloud-strategy-303",
+  "relatedBadge": "expert_cloud_001",
+  "topics": [
+    "Multi-cloud design",
+    "Cloud abstraction",
+    "Workload placement",
+    "Provider selection",
+    "Unified operations",
+    "Cross-cloud security",
+    "Data management",
+    "Cost optimization"
+  ],
+  "prerequisites": ["cloud_architecture_201"],
+  "projects": [
+    "Multi-cloud strategy",
+    "Cloud abstraction",
+    "Unified operations"
+  ]
+}

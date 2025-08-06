@@ -1,0 +1,24 @@
+{
+  "id": "data_architecture_301",
+  "title": "Enterprise Data Architecture",
+  "description": "Design and implement enterprise-scale data architectures",
+  "hours": 30,
+  "url": "https://example.com/courses/data-architecture-301",
+  "relatedBadge": "expert_data_001",
+  "topics": [
+    "Data architecture patterns",
+    "Data modeling",
+    "Data governance",
+    "Master data management",
+    "Data security",
+    "Data integration",
+    "Metadata management",
+    "Data quality"
+  ],
+  "prerequisites": ["data_modeling_202", "system_design_202"],
+  "projects": [
+    "Enterprise architecture",
+    "Data governance",
+    "Quality framework"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "linux_cli_101",
+  "title": "Linux Command Line Basics",
+  "description": "Master the fundamentals of Linux command line operations, file system navigation, and basic shell commands",
+  "hours": 6,
+  "url": "https://example.com/courses/linux-cli-101",
+  "relatedBadge": "basic_linux_001",
+  "topics": [
+    "Shell basics and terminal usage",
+    "File system navigation",
+    "File and directory operations",
+    "Basic text manipulation",
+    "Command line shortcuts",
+    "Man pages and documentation",
+    "Environment variables",
+    "Basic shell scripting"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "File system navigation challenge",
+    "Basic script automation",
+    "Text processing exercises"
+  ]
+}

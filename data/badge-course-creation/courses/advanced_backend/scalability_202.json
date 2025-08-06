@@ -1,0 +1,24 @@
+{
+  "id": "scalability_202",
+  "title": "Backend Scalability Patterns",
+  "description": "Implement advanced scalability patterns for backend systems",
+  "hours": 15,
+  "url": "https://example.com/courses/scalability-202",
+  "relatedBadge": "intermediate_backend_001",
+  "topics": [
+    "Horizontal scaling",
+    "Vertical scaling",
+    "Caching strategies",
+    "Load balancing",
+    "Database sharding",
+    "Connection pooling",
+    "Resource optimization",
+    "Performance monitoring"
+  ],
+  "prerequisites": ["api_basics_101"],
+  "projects": [
+    "Scaling implementation",
+    "Caching system",
+    "Load balancer setup"
+  ]
+}

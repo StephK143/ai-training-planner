@@ -1,0 +1,19 @@
+{
+  "id": "basic_testing_001",
+  "title": "Test Automation Fundamentals",
+  "description": "Learn the basics of automated testing, including unit testing, integration testing, and test-driven development",
+  "level": "basic",
+  "courses": [
+    "unit_testing_101",
+    "integration_testing_102",
+    "tdd_basics_103"
+  ],
+  "skills": [
+    "unit testing",
+    "test frameworks",
+    "mocking",
+    "test-driven development",
+    "code coverage",
+    "continuous testing"
+  ]
+}

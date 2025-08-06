@@ -1,0 +1,19 @@
+{
+  "id": "basic_js_001",
+  "title": "JavaScript Essentials",
+  "description": "Learn core JavaScript concepts including DOM manipulation, async programming, and modern ES6+ features",
+  "level": "basic",
+  "courses": [
+    "js_basics_101",
+    "js_dom_102",
+    "js_async_103"
+  ],
+  "skills": [
+    "JavaScript syntax",
+    "DOM manipulation",
+    "async/await",
+    "ES6+ features",
+    "error handling",
+    "basic debugging"
+  ]
+}

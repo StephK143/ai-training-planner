@@ -1,0 +1,24 @@
+{
+  "id": "protocols_102",
+  "title": "Network Protocols and Services",
+  "description": "Deep dive into common network protocols, services, and their implementations",
+  "hours": 8,
+  "url": "https://example.com/courses/protocols-102",
+  "relatedBadge": "basic_network_001",
+  "topics": [
+    "HTTP/HTTPS protocols",
+    "FTP and SFTP",
+    "Email protocols",
+    "SSH and remote access",
+    "Network security protocols",
+    "Load balancing basics",
+    "Proxy servers",
+    "VPN fundamentals"
+  ],
+  "prerequisites": ["networking_101"],
+  "projects": [
+    "Protocol analysis",
+    "Secure service setup",
+    "Network monitoring"
+  ]
+}

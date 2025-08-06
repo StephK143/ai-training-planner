@@ -1,0 +1,19 @@
+{
+  "id": "expert_softarch_001",
+  "title": "Expert Software Architecture",
+  "description": "Design and implement large-scale distributed systems with advanced architectural patterns",
+  "level": "expert",
+  "courses": [
+    "distributed_systems_301",
+    "architecture_patterns_302",
+    "system_design_303"
+  ],
+  "skills": [
+    "distributed systems design",
+    "architectural patterns",
+    "scalability design",
+    "microservices architecture",
+    "event-driven architecture",
+    "technical decision making"
+  ]
+}

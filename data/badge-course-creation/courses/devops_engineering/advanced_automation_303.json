@@ -1,0 +1,24 @@
+{
+  "id": "advanced_automation_303",
+  "title": "Advanced Automation Engineering",
+  "description": "Master advanced automation patterns and practices",
+  "hours": 25,
+  "url": "https://example.com/courses/advanced-automation-303",
+  "relatedBadge": "expert_devops_001",
+  "topics": [
+    "GitOps practices",
+    "Pipeline design",
+    "Infrastructure as Code",
+    "Configuration management",
+    "Release automation",
+    "Testing automation",
+    "Security automation",
+    "Observability automation"
+  ],
+  "prerequisites": ["automation_patterns_201"],
+  "projects": [
+    "GitOps implementation",
+    "Pipeline system",
+    "IaC framework"
+  ]
+}

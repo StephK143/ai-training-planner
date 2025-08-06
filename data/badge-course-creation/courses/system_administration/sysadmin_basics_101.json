@@ -1,0 +1,24 @@
+{
+  "id": "sysadmin_basics_101",
+  "title": "System Administration Fundamentals",
+  "description": "Learn core system administration concepts and basic server management",
+  "hours": 10,
+  "url": "https://example.com/courses/sysadmin-basics-101",
+  "relatedBadge": "basic_sysadmin_001",
+  "topics": [
+    "System architecture",
+    "User management",
+    "Process management",
+    "Service configuration",
+    "Package management",
+    "Basic security",
+    "System monitoring",
+    "Backup strategies"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Server setup guide",
+    "User management system",
+    "Service deployment"
+  ]
+}

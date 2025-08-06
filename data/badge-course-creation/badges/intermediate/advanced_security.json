@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_security_001",
+  "title": "Advanced Security & Compliance",
+  "description": "Master advanced security concepts, threat modeling, and security automation",
+  "level": "intermediate",
+  "courses": [
+    "advanced_security_201",
+    "threat_modeling_202",
+    "security_automation_203"
+  ],
+  "skills": [
+    "advanced security patterns",
+    "threat modeling",
+    "security automation",
+    "compliance frameworks",
+    "penetration testing",
+    "incident response"
+  ]
+}

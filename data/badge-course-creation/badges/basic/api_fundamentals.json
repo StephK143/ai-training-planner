@@ -1,0 +1,19 @@
+{
+  "id": "basic_api_001",
+  "title": "API Fundamentals",
+  "description": "Learn the basics of API design, implementation, and consumption using REST principles",
+  "level": "basic",
+  "courses": [
+    "api_basics_101",
+    "rest_principles_102",
+    "api_security_103"
+  ],
+  "skills": [
+    "REST concepts",
+    "HTTP methods",
+    "API authentication",
+    "endpoint design",
+    "status codes",
+    "API testing basics"
+  ]
+}

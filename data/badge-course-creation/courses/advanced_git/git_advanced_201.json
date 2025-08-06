@@ -1,0 +1,24 @@
+{
+  "id": "git_advanced_201",
+  "title": "Advanced Git Operations",
+  "description": "Master advanced Git operations, branching strategies, and repository management",
+  "hours": 12,
+  "url": "https://example.com/courses/git-advanced-201",
+  "relatedBadge": "intermediate_git_001",
+  "topics": [
+    "Advanced branching strategies",
+    "Rebasing workflows",
+    "Cherry-picking",
+    "Git hooks",
+    "Submodules and subtrees",
+    "Git internals",
+    "Repository maintenance",
+    "Git configurations"
+  ],
+  "prerequisites": ["git_basics_101", "git_workflow_102"],
+  "projects": [
+    "Custom Git hooks implementation",
+    "Monorepo management",
+    "Advanced workflow automation"
+  ]
+}

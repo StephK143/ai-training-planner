@@ -1,0 +1,24 @@
+{
+  "id": "git_workflow_202",
+  "title": "Enterprise Git Workflows",
+  "description": "Learn enterprise-level Git workflows, collaboration patterns, and best practices",
+  "hours": 10,
+  "url": "https://example.com/courses/git-workflow-202",
+  "relatedBadge": "intermediate_git_001",
+  "topics": [
+    "GitFlow workflow",
+    "Trunk-based development",
+    "Release management",
+    "Code review practices",
+    "Merge strategies",
+    "Conflict resolution",
+    "Continuous integration",
+    "Team collaboration"
+  ],
+  "prerequisites": ["git_advanced_201"],
+  "projects": [
+    "GitFlow implementation",
+    "Release automation",
+    "Team workflow setup"
+  ]
+}

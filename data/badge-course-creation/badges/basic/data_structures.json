@@ -1,0 +1,19 @@
+{
+  "id": "basic_datastructures_001",
+  "title": "Basic Data Structures",
+  "description": "Master fundamental data structures and their implementations in modern programming languages",
+  "level": "basic",
+  "courses": [
+    "arrays_lists_101",
+    "trees_graphs_102",
+    "algorithms_basics_103"
+  ],
+  "skills": [
+    "arrays and lists",
+    "hash tables",
+    "trees and graphs",
+    "basic algorithms",
+    "time complexity",
+    "space complexity"
+  ]
+}

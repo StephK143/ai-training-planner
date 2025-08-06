@@ -1,0 +1,24 @@
+{
+  "id": "css_basics_102",
+  "title": "CSS3 and Styling Fundamentals",
+  "description": "Learn modern CSS3 styling, selectors, layout techniques, and responsive design principles",
+  "hours": 8,
+  "url": "https://example.com/courses/css-basics-102",
+  "relatedBadge": "basic_htmlcss_001",
+  "topics": [
+    "CSS selectors and specificity",
+    "Box model and layout",
+    "Flexbox and Grid",
+    "Positioning and float",
+    "Colors and typography",
+    "Transitions and animations",
+    "Pseudo-classes and elements",
+    "CSS methodologies (BEM)"
+  ],
+  "prerequisites": ["html_basics_101"],
+  "projects": [
+    "Responsive navigation system",
+    "Card-based layout",
+    "Animated components"
+  ]
+}

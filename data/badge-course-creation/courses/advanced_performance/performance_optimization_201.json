@@ -1,0 +1,24 @@
+{
+  "id": "performance_optimization_201",
+  "title": "Advanced Performance Optimization",
+  "description": "Master application performance optimization techniques",
+  "hours": 18,
+  "url": "https://example.com/courses/performance-optimization-201",
+  "relatedBadge": "intermediate_performance_001",
+  "topics": [
+    "Code optimization",
+    "Memory management",
+    "CPU profiling",
+    "Database optimization",
+    "Network optimization",
+    "Caching strategies",
+    "Resource management",
+    "Performance metrics"
+  ],
+  "prerequisites": ["performance_basics_101"],
+  "projects": [
+    "Code optimization",
+    "Memory profiling",
+    "Cache implementation"
+  ]
+}

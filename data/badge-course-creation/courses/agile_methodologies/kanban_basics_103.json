@@ -1,0 +1,24 @@
+{
+  "id": "kanban_basics_103",
+  "title": "Kanban Fundamentals",
+  "description": "Learn Kanban principles, practices, and implementation",
+  "hours": 6,
+  "url": "https://example.com/courses/kanban-basics-103",
+  "relatedBadge": "basic_agile_001",
+  "topics": [
+    "Kanban principles",
+    "Visualizing work",
+    "Work in progress limits",
+    "Flow management",
+    "Metrics and analytics",
+    "Service delivery",
+    "Continuous improvement",
+    "Kanban boards"
+  ],
+  "prerequisites": ["agile_basics_101", "scrum_fundamentals_102"],
+  "projects": [
+    "Kanban board setup",
+    "Flow optimization",
+    "Metrics implementation"
+  ]
+}

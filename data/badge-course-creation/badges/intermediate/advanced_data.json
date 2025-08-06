@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_data_001",
+  "title": "Advanced Data Management",
+  "description": "Master advanced database concepts, data modeling, and optimization techniques",
+  "level": "intermediate",
+  "courses": [
+    "advanced_db_201",
+    "data_modeling_202",
+    "query_optimization_203"
+  ],
+  "skills": [
+    "database optimization",
+    "data modeling",
+    "query tuning",
+    "replication",
+    "sharding strategies",
+    "backup/recovery"
+  ]
+}

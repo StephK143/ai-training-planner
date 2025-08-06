@@ -1,0 +1,24 @@
+{
+  "id": "cloud_governance_302",
+  "title": "Cloud Governance & Compliance",
+  "description": "Implement comprehensive cloud governance and compliance frameworks",
+  "hours": 25,
+  "url": "https://example.com/courses/cloud-governance-302",
+  "relatedBadge": "expert_cloud_001",
+  "topics": [
+    "Governance frameworks",
+    "Policy management",
+    "Compliance automation",
+    "Resource organization",
+    "Cost controls",
+    "Security policies",
+    "Audit trails",
+    "Risk management"
+  ],
+  "prerequisites": ["cloud_security_203"],
+  "projects": [
+    "Governance framework",
+    "Policy automation",
+    "Compliance system"
+  ]
+}

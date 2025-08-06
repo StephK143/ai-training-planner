@@ -1,0 +1,24 @@
+{
+  "id": "scalability_patterns_202",
+  "title": "Cloud Scalability Patterns",
+  "description": "Implement cloud-native scalability patterns",
+  "hours": 15,
+  "url": "https://example.com/courses/scalability-patterns-202",
+  "relatedBadge": "intermediate_cloud_001",
+  "topics": [
+    "Auto-scaling",
+    "Load balancing",
+    "Serverless scaling",
+    "Database scaling",
+    "Microservices",
+    "Container orchestration",
+    "Event-driven scaling",
+    "Performance optimization"
+  ],
+  "prerequisites": ["cloud_basics_101"],
+  "projects": [
+    "Auto-scaling setup",
+    "Load balancer config",
+    "Serverless system"
+  ]
+}

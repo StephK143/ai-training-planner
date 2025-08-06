@@ -1,0 +1,24 @@
+{
+  "id": "enterprise_cloud_301",
+  "title": "Enterprise Cloud Architecture",
+  "description": "Design and implement enterprise-scale cloud solutions",
+  "hours": 30,
+  "url": "https://example.com/courses/enterprise-cloud-301",
+  "relatedBadge": "expert_cloud_001",
+  "topics": [
+    "Enterprise patterns",
+    "Hybrid cloud",
+    "Migration strategies",
+    "Service mesh",
+    "Identity federation",
+    "Disaster recovery",
+    "Performance optimization",
+    "Cost management"
+  ],
+  "prerequisites": ["cloud_architecture_201", "scalability_patterns_202"],
+  "projects": [
+    "Enterprise architecture",
+    "Migration strategy",
+    "DR implementation"
+  ]
+}

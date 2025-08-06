@@ -1,0 +1,24 @@
+{
+  "id": "api_scaling_203",
+  "title": "API Scaling & Performance",
+  "description": "Learn advanced techniques for scaling and optimizing APIs",
+  "hours": 15,
+  "url": "https://example.com/courses/api-scaling-203",
+  "relatedBadge": "intermediate_api_001",
+  "topics": [
+    "Caching strategies",
+    "Load balancing",
+    "API metrics",
+    "Performance optimization",
+    "Horizontal scaling",
+    "Database optimization",
+    "Microservices patterns",
+    "Traffic management"
+  ],
+  "prerequisites": ["api_basics_101"],
+  "projects": [
+    "Caching implementation",
+    "Load test automation",
+    "Performance optimization"
+  ]
+}

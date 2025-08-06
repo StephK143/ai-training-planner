@@ -1,0 +1,24 @@
+{
+  "id": "data_manipulation_103",
+  "title": "Data Manipulation and Database Management",
+  "description": "Learn how to modify database content, manage transactions, and maintain data integrity. Master INSERT, UPDATE, and DELETE operations along with transaction management.",
+  "hours": 6,
+  "url": "https://example.com/courses/data-manipulation-103",
+  "relatedBadge": "basic_sql_001",
+  "topics": [
+    "INSERT operations",
+    "UPDATE statements",
+    "DELETE operations",
+    "Transaction management",
+    "ACID properties",
+    "Data integrity constraints",
+    "Basic indexing concepts",
+    "Database maintenance tasks"
+  ],
+  "prerequisites": ["sql_basics_101", "sql_queries_102"],
+  "projects": [
+    "Build a data maintenance application",
+    "Implement transaction-safe operations",
+    "Create data modification scripts"
+  ]
+}

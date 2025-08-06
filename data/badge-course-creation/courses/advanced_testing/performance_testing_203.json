@@ -1,0 +1,24 @@
+{
+  "id": "performance_testing_203",
+  "title": "Performance Testing",
+  "description": "Implement comprehensive performance testing strategies",
+  "hours": 15,
+  "url": "https://example.com/courses/performance-testing-203",
+  "relatedBadge": "intermediate_testing_001",
+  "topics": [
+    "Load testing",
+    "Stress testing",
+    "Endurance testing",
+    "Spike testing",
+    "Performance metrics",
+    "Test infrastructure",
+    "Results analysis",
+    "Bottleneck identification"
+  ],
+  "prerequisites": ["testing_basics_101"],
+  "projects": [
+    "Performance suite",
+    "Load generation",
+    "Results analysis"
+  ]
+}

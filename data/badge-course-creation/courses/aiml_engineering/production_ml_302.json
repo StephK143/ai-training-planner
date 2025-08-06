@@ -1,0 +1,24 @@
+{
+  "id": "production_ml_302",
+  "title": "Production Machine Learning",
+  "description": "Implement production-grade machine learning systems",
+  "hours": 30,
+  "url": "https://example.com/courses/production-ml-302",
+  "relatedBadge": "expert_aiml_001",
+  "topics": [
+    "Model deployment",
+    "Model serving",
+    "Performance optimization",
+    "Resource management",
+    "Scalability patterns",
+    "Cost optimization",
+    "Error handling",
+    "Production monitoring"
+  ],
+  "prerequisites": ["ml_basics_201", "system_design_202"],
+  "projects": [
+    "Model deployment system",
+    "Serving infrastructure",
+    "Performance optimization"
+  ]
+}

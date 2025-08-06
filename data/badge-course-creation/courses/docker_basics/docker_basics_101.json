@@ -1,0 +1,24 @@
+{
+  "id": "docker_basics_101",
+  "title": "Introduction to Docker",
+  "description": "Learn container fundamentals and basic Docker operations",
+  "hours": 8,
+  "url": "https://example.com/courses/docker-basics-101",
+  "relatedBadge": "basic_docker_001",
+  "topics": [
+    "Container concepts",
+    "Docker architecture",
+    "Basic Docker commands",
+    "Image management",
+    "Container lifecycle",
+    "Docker Hub",
+    "Basic networking",
+    "Volume basics"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "First container deployment",
+    "Custom image creation",
+    "Basic container management"
+  ]
+}

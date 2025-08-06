@@ -1,0 +1,24 @@
+{
+  "id": "scrum_fundamentals_102",
+  "title": "Scrum Framework",
+  "description": "Master the Scrum framework, roles, events, and artifacts",
+  "hours": 8,
+  "url": "https://example.com/courses/scrum-fundamentals-102",
+  "relatedBadge": "basic_agile_001",
+  "topics": [
+    "Scrum roles",
+    "Scrum events",
+    "Scrum artifacts",
+    "Sprint planning",
+    "Daily Scrums",
+    "Sprint review",
+    "Sprint retrospective",
+    "Product backlog management"
+  ],
+  "prerequisites": ["agile_basics_101"],
+  "projects": [
+    "Scrum implementation plan",
+    "Sprint facilitation",
+    "Backlog creation"
+  ]
+}

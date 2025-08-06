@@ -1,0 +1,24 @@
+{
+  "id": "api_security_202",
+  "title": "Advanced API Security",
+  "description": "Implement advanced API security patterns and protocols",
+  "hours": 18,
+  "url": "https://example.com/courses/api-security-202",
+  "relatedBadge": "intermediate_api_001",
+  "topics": [
+    "OAuth 2.0 flows",
+    "OpenID Connect",
+    "API gateways",
+    "Rate limiting",
+    "Token management",
+    "Security headers",
+    "API vulnerabilities",
+    "Security testing"
+  ],
+  "prerequisites": ["api_auth_102"],
+  "projects": [
+    "OAuth implementation",
+    "API gateway setup",
+    "Security testing suite"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_cloud_001",
+  "title": "Cloud Architecture & Design",
+  "description": "Design and implement scalable, resilient cloud architectures using best practices",
+  "level": "intermediate",
+  "courses": [
+    "cloud_architecture_201",
+    "scalability_patterns_202",
+    "cloud_security_203"
+  ],
+  "skills": [
+    "cloud architecture patterns",
+    "scalability design",
+    "high availability",
+    "disaster recovery",
+    "cost optimization",
+    "multi-cloud strategies"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "basic_cloud_001",
+  "title": "Basic Cloud Computing",
+  "description": "Understanding cloud computing concepts, services, and basic implementation patterns",
+  "level": "basic",
+  "courses": [
+    "cloud_basics_101",
+    "aws_fundamentals_102",
+    "cloud_security_103"
+  ],
+  "skills": [
+    "cloud concepts",
+    "AWS basics",
+    "cloud security",
+    "IaaS/PaaS/SaaS",
+    "cloud storage",
+    "serverless basics"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "expert_sre_001",
+  "title": "Expert Site Reliability Engineering",
+  "description": "Lead SRE practices and implement advanced reliability engineering solutions",
+  "level": "expert",
+  "courses": [
+    "sre_practices_301",
+    "reliability_engineering_302",
+    "chaos_engineering_303"
+  ],
+  "skills": [
+    "SLO/SLI definition",
+    "reliability engineering",
+    "chaos engineering",
+    "observability design",
+    "incident management",
+    "automated remediation"
+  ]
+}

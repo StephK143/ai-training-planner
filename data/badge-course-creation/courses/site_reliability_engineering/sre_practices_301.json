@@ -1,0 +1,24 @@
+{
+  "id": "sre_practices_301",
+  "title": "Advanced SRE Practices",
+  "description": "Master advanced site reliability engineering practices",
+  "hours": 30,
+  "url": "https://example.com/courses/sre-practices-301",
+  "relatedBadge": "expert_sre_001",
+  "topics": [
+    "SLO/SLI engineering",
+    "Error budgets",
+    "Capacity planning",
+    "Incident management",
+    "Production readiness",
+    "Automated remediation",
+    "Risk management",
+    "Blameless culture"
+  ],
+  "prerequisites": ["monitoring_201", "observability_202"],
+  "projects": [
+    "SLO framework",
+    "Capacity system",
+    "Incident framework"
+  ]
+}

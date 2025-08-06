@@ -1,0 +1,19 @@
+{
+  "id": "basic_docker_001",
+  "title": "Docker Basics",
+  "description": "Understanding containerization concepts and basic Docker operations",
+  "level": "basic",
+  "courses": [
+    "docker_basics_101",
+    "container_ops_102",
+    "docker_compose_103"
+  ],
+  "skills": [
+    "container concepts",
+    "Docker CLI",
+    "Dockerfile creation",
+    "image management",
+    "docker-compose basics",
+    "container networking"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "api_testing_103",
+  "title": "API Testing and Documentation",
+  "description": "Learn API testing strategies, documentation tools, and best practices",
+  "hours": 8,
+  "url": "https://example.com/courses/api-testing-103",
+  "relatedBadge": "basic_api_001",
+  "topics": [
+    "API testing strategies",
+    "Postman usage",
+    "Automated testing",
+    "OpenAPI/Swagger",
+    "Documentation tools",
+    "Integration testing",
+    "Performance testing",
+    "Monitoring basics"
+  ],
+  "prerequisites": ["api_basics_101", "api_auth_102"],
+  "projects": [
+    "API test suite",
+    "OpenAPI documentation",
+    "Integration tests"
+  ]
+}

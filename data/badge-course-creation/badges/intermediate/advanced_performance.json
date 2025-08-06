@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_performance_001",
+  "title": "Advanced Performance Engineering",
+  "description": "Master application performance optimization and scalability engineering",
+  "level": "intermediate",
+  "courses": [
+    "performance_optimization_201",
+    "scalability_patterns_202",
+    "load_testing_203"
+  ],
+  "skills": [
+    "performance optimization",
+    "scalability patterns",
+    "load testing",
+    "profiling",
+    "caching strategies",
+    "performance monitoring"
+  ]
+}

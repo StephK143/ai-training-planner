@@ -1,0 +1,19 @@
+{
+  "id": "basic_sql_001",
+  "title": "SQL Basics",
+  "description": "Learn fundamental SQL concepts including querying, database design basics, and data manipulation",
+  "level": "basic",
+  "courses": [
+    "sql_basics_101",
+    "sql_queries_102",
+    "data_manipulation_103"
+  ],
+  "skills": [
+    "SQL queries",
+    "database design",
+    "CRUD operations",
+    "joins and relationships",
+    "indexing basics",
+    "data types"
+  ]
+}

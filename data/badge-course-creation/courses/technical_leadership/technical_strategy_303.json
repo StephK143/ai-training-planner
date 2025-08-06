@@ -1,0 +1,24 @@
+{
+  "id": "technical_strategy_303",
+  "title": "Technical Strategy",
+  "description": "Develop and implement effective technical strategies",
+  "hours": 25,
+  "url": "https://example.com/courses/technical-strategy-303",
+  "relatedBadge": "expert_techlead_001",
+  "topics": [
+    "Strategy development",
+    "Technology roadmap",
+    "Innovation management",
+    "Portfolio management",
+    "Risk assessment",
+    "Resource planning",
+    "Stakeholder management",
+    "Change leadership"
+  ],
+  "prerequisites": ["tech_leadership_301"],
+  "projects": [
+    "Strategy development",
+    "Technology roadmap",
+    "Portfolio plan"
+  ]
+}

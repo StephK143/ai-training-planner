@@ -1,0 +1,24 @@
+{
+  "id": "automation_basics_103",
+  "title": "Deployment Automation",
+  "description": "Learn deployment automation techniques and best practices",
+  "hours": 8,
+  "url": "https://example.com/courses/automation-basics-103",
+  "relatedBadge": "basic_cicd_001",
+  "topics": [
+    "Deployment strategies",
+    "Infrastructure as Code",
+    "Configuration management",
+    "Container deployment",
+    "Release management",
+    "Rollback strategies",
+    "Deployment monitoring",
+    "Automation testing"
+  ],
+  "prerequisites": ["cicd_basics_101", "pipeline_fundamentals_102"],
+  "projects": [
+    "Automated deployment system",
+    "IaC implementation",
+    "Release automation"
+  ]
+}

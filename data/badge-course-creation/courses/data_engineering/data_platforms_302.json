@@ -1,0 +1,24 @@
+{
+  "id": "data_platforms_302",
+  "title": "Modern Data Platforms",
+  "description": "Design and implement modern data platform solutions",
+  "hours": 25,
+  "url": "https://example.com/courses/data-platforms-302",
+  "relatedBadge": "expert_data_001",
+  "topics": [
+    "Data lakes",
+    "Data warehouses",
+    "Lake houses",
+    "Streaming platforms",
+    "Data processing",
+    "Data catalogs",
+    "Data mesh",
+    "Platform security"
+  ],
+  "prerequisites": ["advanced_db_201"],
+  "projects": [
+    "Platform architecture",
+    "Data lake implementation",
+    "Processing pipeline"
+  ]
+}

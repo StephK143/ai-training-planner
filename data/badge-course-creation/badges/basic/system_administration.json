@@ -1,0 +1,19 @@
+{
+  "id": "basic_sysadmin_001",
+  "title": "Basic System Administration",
+  "description": "Learn fundamental system administration tasks, user management, and basic security",
+  "level": "basic",
+  "courses": [
+    "sysadmin_basics_101",
+    "user_management_102",
+    "system_security_103"
+  ],
+  "skills": [
+    "user management",
+    "service management",
+    "log analysis",
+    "backup/restore",
+    "security basics",
+    "monitoring fundamentals"
+  ]
+}

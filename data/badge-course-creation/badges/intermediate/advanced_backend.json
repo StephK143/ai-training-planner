@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_backend_001",
+  "title": "Advanced Backend Development",
+  "description": "Design and implement scalable backend systems with advanced patterns",
+  "level": "intermediate",
+  "courses": [
+    "backend_arch_201",
+    "scalability_202",
+    "messaging_patterns_203"
+  ],
+  "skills": [
+    "backend architecture",
+    "messaging patterns",
+    "caching strategies",
+    "service integration",
+    "async processing",
+    "API design"
+  ]
+}

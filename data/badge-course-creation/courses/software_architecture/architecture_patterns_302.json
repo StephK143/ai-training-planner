@@ -1,0 +1,24 @@
+{
+  "id": "architecture_patterns_302",
+  "title": "Advanced Architectural Patterns",
+  "description": "Master advanced architectural patterns and practices",
+  "hours": 25,
+  "url": "https://example.com/courses/architecture-patterns-302",
+  "relatedBadge": "expert_softarch_001",
+  "topics": [
+    "Enterprise patterns",
+    "Integration patterns",
+    "Microservices patterns",
+    "Event-driven patterns",
+    "Reactive patterns",
+    "Cloud patterns",
+    "Data patterns",
+    "Security patterns"
+  ],
+  "prerequisites": ["arch_patterns_201"],
+  "projects": [
+    "Pattern implementation",
+    "Architecture design",
+    "System integration"
+  ]
+}

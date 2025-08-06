@@ -1,0 +1,24 @@
+{
+  "id": "threat_modeling_202",
+  "title": "Advanced Threat Modeling",
+  "description": "Master threat modeling methodologies and practical application",
+  "hours": 15,
+  "url": "https://example.com/courses/threat-modeling-202",
+  "relatedBadge": "intermediate_security_001",
+  "topics": [
+    "Threat modeling methodologies",
+    "STRIDE framework",
+    "Attack trees",
+    "Data flow diagrams",
+    "Risk assessment",
+    "Mitigation strategies",
+    "Security requirements",
+    "Threat intelligence"
+  ],
+  "prerequisites": ["security_fundamentals_101"],
+  "projects": [
+    "System threat model development",
+    "Attack tree analysis",
+    "Mitigation planning"
+  ]
+}

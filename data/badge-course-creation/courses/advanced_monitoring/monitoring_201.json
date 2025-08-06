@@ -1,0 +1,24 @@
+{
+  "id": "monitoring_201",
+  "title": "Advanced Monitoring Systems",
+  "description": "Master advanced monitoring system implementation",
+  "hours": 15,
+  "url": "https://example.com/courses/monitoring-201",
+  "relatedBadge": "intermediate_monitoring_001",
+  "topics": [
+    "Monitoring architecture",
+    "Metrics collection",
+    "Time-series databases",
+    "Service monitoring",
+    "Infrastructure monitoring",
+    "Application monitoring",
+    "Custom metrics",
+    "Performance monitoring"
+  ],
+  "prerequisites": ["monitoring_basics_101"],
+  "projects": [
+    "Monitoring setup",
+    "Metrics pipeline",
+    "Dashboard creation"
+  ]
+}

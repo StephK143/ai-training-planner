@@ -1,0 +1,24 @@
+{
+  "id": "container_security_202",
+  "title": "Container Security and Best Practices",
+  "description": "Master container security, compliance, and operational best practices",
+  "hours": 12,
+  "url": "https://example.com/courses/container-security-202",
+  "relatedBadge": "intermediate_container_001",
+  "topics": [
+    "Container security principles",
+    "Image scanning",
+    "Runtime security",
+    "Network policies",
+    "RBAC implementation",
+    "Secrets management",
+    "Security monitoring",
+    "Compliance automation"
+  ],
+  "prerequisites": ["kubernetes_201"],
+  "projects": [
+    "Security policy implementation",
+    "Monitoring setup",
+    "Compliance framework"
+  ]
+}

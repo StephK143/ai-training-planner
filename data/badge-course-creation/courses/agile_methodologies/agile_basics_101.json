@@ -1,0 +1,24 @@
+{
+  "id": "agile_basics_101",
+  "title": "Agile Fundamentals",
+  "description": "Learn core Agile principles, values, and mindset",
+  "hours": 6,
+  "url": "https://example.com/courses/agile-basics-101",
+  "relatedBadge": "basic_agile_001",
+  "topics": [
+    "Agile manifesto",
+    "Agile principles",
+    "Iterative development",
+    "Team collaboration",
+    "Customer involvement",
+    "Continuous improvement",
+    "Agile mindset",
+    "Value delivery"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Agile transformation plan",
+    "Team practices implementation",
+    "Value stream mapping"
+  ]
+}

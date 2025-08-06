@@ -1,0 +1,24 @@
+{
+  "id": "cloud_security_203",
+  "title": "Cloud Security Architecture",
+  "description": "Design and implement secure cloud architectures",
+  "hours": 15,
+  "url": "https://example.com/courses/cloud-security-203",
+  "relatedBadge": "intermediate_cloud_001",
+  "topics": [
+    "Security architecture",
+    "Identity management",
+    "Network security",
+    "Data protection",
+    "Compliance",
+    "Security automation",
+    "Incident response",
+    "Threat detection"
+  ],
+  "prerequisites": ["cloud_basics_101", "security_basics_101"],
+  "projects": [
+    "Security architecture",
+    "IAM implementation",
+    "Security automation"
+  ]
+}

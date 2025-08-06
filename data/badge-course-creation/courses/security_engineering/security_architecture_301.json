@@ -1,0 +1,24 @@
+{
+  "id": "security_architecture_301",
+  "title": "Enterprise Security Architecture",
+  "description": "Design and implement enterprise security architectures",
+  "hours": 30,
+  "url": "https://example.com/courses/security-architecture-301",
+  "relatedBadge": "expert_security_001",
+  "topics": [
+    "Security frameworks",
+    "Zero trust architecture",
+    "Identity architecture",
+    "Network security",
+    "Data security",
+    "Cloud security",
+    "Security automation",
+    "Compliance architecture"
+  ],
+  "prerequisites": ["advanced_security_201", "devsecops_201"],
+  "projects": [
+    "Security architecture",
+    "Zero trust implementation",
+    "IAM framework"
+  ]
+}

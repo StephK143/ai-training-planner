@@ -1,0 +1,24 @@
+{
+  "id": "container_ops_102",
+  "title": "Container Operations",
+  "description": "Master container operations, networking, and storage management",
+  "hours": 8,
+  "url": "https://example.com/courses/container-ops-102",
+  "relatedBadge": "basic_docker_001",
+  "topics": [
+    "Advanced container management",
+    "Container networking",
+    "Volume management",
+    "Resource constraints",
+    "Container logging",
+    "Health checks",
+    "Container security basics",
+    "Multi-container apps"
+  ],
+  "prerequisites": ["docker_basics_101"],
+  "projects": [
+    "Multi-container application",
+    "Custom network setup",
+    "Persistent storage implementation"
+  ]
+}

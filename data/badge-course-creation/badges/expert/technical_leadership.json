@@ -1,0 +1,19 @@
+{
+  "id": "expert_techlead_001",
+  "title": "Expert Technical Leadership",
+  "description": "Lead technical teams and architect solutions while driving technical excellence",
+  "level": "expert",
+  "courses": [
+    "tech_leadership_301",
+    "architecture_governance_302",
+    "technical_strategy_303"
+  ],
+  "skills": [
+    "technical leadership",
+    "architecture governance",
+    "technical strategy",
+    "team mentoring",
+    "technical roadmapping",
+    "stakeholder management"
+  ]
+}

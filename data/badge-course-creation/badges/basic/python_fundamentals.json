@@ -1,0 +1,19 @@
+{
+  "id": "basic_python_001",
+  "title": "Python Programming Fundamentals",
+  "description": "Master Python basics including syntax, data types, control structures, functions, and basic object-oriented programming concepts",
+  "level": "basic",
+  "courses": [
+    "python_basics_101",
+    "python_functions_102",
+    "python_oop_103"
+  ],
+  "skills": [
+    "Python syntax",
+    "data types",
+    "control structures",
+    "functions",
+    "basic OOP",
+    "error handling"
+  ]
+}

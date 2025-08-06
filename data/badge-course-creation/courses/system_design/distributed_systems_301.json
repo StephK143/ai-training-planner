@@ -1,0 +1,24 @@
+{
+  "id": "distributed_systems_301",
+  "title": "Advanced Distributed Systems",
+  "description": "Design and implement large-scale distributed systems",
+  "hours": 30,
+  "url": "https://example.com/courses/distributed-systems-301",
+  "relatedBadge": "expert_sysdesign_001",
+  "topics": [
+    "Distributed architecture",
+    "Consensus algorithms",
+    "Replication strategies",
+    "Partitioning",
+    "Consistency models",
+    "Failure handling",
+    "Network protocols",
+    "System coordination"
+  ],
+  "prerequisites": ["system_design_202", "scalability_patterns_202"],
+  "projects": [
+    "Distributed system",
+    "Consensus implementation",
+    "Replication system"
+  ]
+}

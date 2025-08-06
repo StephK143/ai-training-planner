@@ -1,0 +1,24 @@
+{
+  "id": "network_tools_103",
+  "title": "Network Tools and Troubleshooting",
+  "description": "Learn essential networking tools, diagnostics, and troubleshooting techniques",
+  "hours": 8,
+  "url": "https://example.com/courses/network-tools-103",
+  "relatedBadge": "basic_network_001",
+  "topics": [
+    "Command-line network tools",
+    "Packet analysis",
+    "Network monitoring tools",
+    "Diagnostic techniques",
+    "Performance testing",
+    "Security scanning",
+    "Log analysis",
+    "Documentation practices"
+  ],
+  "prerequisites": ["networking_101", "protocols_102"],
+  "projects": [
+    "Network analysis report",
+    "Monitoring system setup",
+    "Troubleshooting guide"
+  ]
+}

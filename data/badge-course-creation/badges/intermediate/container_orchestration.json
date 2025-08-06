@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_container_001",
+  "title": "Container Orchestration",
+  "description": "Master container orchestration with Kubernetes and advanced Docker concepts",
+  "level": "intermediate",
+  "courses": [
+    "kubernetes_201",
+    "container_security_202",
+    "orchestration_patterns_203"
+  ],
+  "skills": [
+    "Kubernetes basics",
+    "container orchestration",
+    "deployment strategies",
+    "service mesh",
+    "container security",
+    "monitoring solutions"
+  ]
+}

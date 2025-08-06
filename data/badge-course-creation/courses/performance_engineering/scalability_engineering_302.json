@@ -1,0 +1,24 @@
+{
+  "id": "scalability_engineering_302",
+  "title": "Advanced Scalability Engineering",
+  "description": "Design and implement highly scalable systems",
+  "hours": 25,
+  "url": "https://example.com/courses/scalability-engineering-302",
+  "relatedBadge": "expert_perf_001",
+  "topics": [
+    "Distributed systems",
+    "Horizontal scaling",
+    "Vertical scaling",
+    "Data partitioning",
+    "Load balancing",
+    "Caching strategies",
+    "Queue systems",
+    "Eventual consistency"
+  ],
+  "prerequisites": ["scalability_patterns_202"],
+  "projects": [
+    "Scalability design",
+    "System implementation",
+    "Load distribution"
+  ]
+}

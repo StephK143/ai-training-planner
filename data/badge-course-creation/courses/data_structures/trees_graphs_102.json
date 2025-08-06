@@ -1,0 +1,24 @@
+{
+  "id": "trees_graphs_102",
+  "title": "Trees and Graphs",
+  "description": "Master tree and graph data structures and their applications",
+  "hours": 10,
+  "url": "https://example.com/courses/trees-graphs-102",
+  "relatedBadge": "basic_datastructures_001",
+  "topics": [
+    "Binary trees",
+    "Tree traversal",
+    "Graph representation",
+    "Graph algorithms",
+    "Balanced trees",
+    "Path finding",
+    "Tree balancing",
+    "Graph optimization"
+  ],
+  "prerequisites": ["ds_basics_101"],
+  "projects": [
+    "Tree implementation",
+    "Graph algorithm implementation",
+    "Path finding application"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "python_basics_101",
+  "title": "Python Programming Basics",
+  "description": "Introduction to Python programming language, basic syntax, and fundamental programming concepts",
+  "hours": 10,
+  "url": "https://example.com/courses/python-basics-101",
+  "relatedBadge": "basic_python_001",
+  "topics": [
+    "Python environment setup",
+    "Variables and data types",
+    "Control structures",
+    "Functions and modules",
+    "Basic input/output",
+    "Lists and dictionaries",
+    "File handling",
+    "Error handling basics"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Command line calculator",
+    "File processing tool",
+    "Simple data analyzer"
+  ]
+}

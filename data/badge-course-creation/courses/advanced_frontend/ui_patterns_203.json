@@ -1,0 +1,24 @@
+{
+  "id": "ui_patterns_203",
+  "title": "Advanced UI Patterns",
+  "description": "Master advanced UI patterns and best practices",
+  "hours": 15,
+  "url": "https://example.com/courses/ui-patterns-203",
+  "relatedBadge": "intermediate_frontend_001",
+  "topics": [
+    "Component patterns",
+    "Responsive design",
+    "Accessibility patterns",
+    "Performance patterns",
+    "Animation patterns",
+    "Form patterns",
+    "Layout systems",
+    "Design systems"
+  ],
+  "prerequisites": ["html_css_101"],
+  "projects": [
+    "Pattern library",
+    "Accessible components",
+    "Design system"
+  ]
+}

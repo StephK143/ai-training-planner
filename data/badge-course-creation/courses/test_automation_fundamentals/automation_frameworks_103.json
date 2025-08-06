@@ -1,0 +1,24 @@
+{
+  "id": "automation_frameworks_103",
+  "title": "Test Automation Frameworks",
+  "description": "Learn to design and implement test automation frameworks",
+  "hours": 10,
+  "url": "https://example.com/courses/automation-frameworks-103",
+  "relatedBadge": "basic_testing_001",
+  "topics": [
+    "Automation frameworks",
+    "Page Object Model",
+    "Test data management",
+    "Reporting and logging",
+    "CI/CD integration",
+    "Cross-browser testing",
+    "Performance testing",
+    "Mobile testing basics"
+  ],
+  "prerequisites": ["test_basics_101", "unit_testing_102"],
+  "projects": [
+    "Automation framework design",
+    "End-to-end test suite",
+    "CI/CD test integration"
+  ]
+}

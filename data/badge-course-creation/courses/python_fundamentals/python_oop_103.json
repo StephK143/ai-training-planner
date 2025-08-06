@@ -1,0 +1,24 @@
+{
+  "id": "python_oop_103",
+  "title": "Object-Oriented Programming in Python",
+  "description": "Master object-oriented programming concepts and their implementation in Python",
+  "hours": 10,
+  "url": "https://example.com/courses/python-oop-103",
+  "relatedBadge": "basic_python_001",
+  "topics": [
+    "Classes and objects",
+    "Inheritance and polymorphism",
+    "Encapsulation",
+    "Magic methods",
+    "Properties and descriptors",
+    "Abstract classes",
+    "Multiple inheritance",
+    "Design patterns basics"
+  ],
+  "prerequisites": ["python_basics_101", "python_functions_102"],
+  "projects": [
+    "Class hierarchy implementation",
+    "Simple game development",
+    "Data structure implementation"
+  ]
+}

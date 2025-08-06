@@ -1,0 +1,24 @@
+{
+  "id": "web_security_102",
+  "title": "Web Application Security",
+  "description": "Master common web security vulnerabilities and protection techniques",
+  "hours": 10,
+  "url": "https://example.com/courses/web-security-102",
+  "relatedBadge": "basic_security_001",
+  "topics": [
+    "OWASP Top 10",
+    "XSS prevention",
+    "SQL injection",
+    "CSRF protection",
+    "Security headers",
+    "Input validation",
+    "Session management",
+    "Security testing"
+  ],
+  "prerequisites": ["security_fundamentals_101"],
+  "projects": [
+    "Vulnerability assessment",
+    "Security testing implementation",
+    "Protection mechanisms"
+  ]
+}

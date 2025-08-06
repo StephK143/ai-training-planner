@@ -1,0 +1,24 @@
+{
+  "id": "infrastructure_automation_202",
+  "title": "Infrastructure Automation",
+  "description": "Implement advanced infrastructure automation solutions",
+  "hours": 18,
+  "url": "https://example.com/courses/infrastructure-automation-202",
+  "relatedBadge": "intermediate_automation_001",
+  "topics": [
+    "Infrastructure as Code",
+    "Configuration management",
+    "Cloud automation",
+    "Network automation",
+    "Security automation",
+    "Containerization",
+    "Orchestration tools",
+    "Compliance automation"
+  ],
+  "prerequisites": ["automation_basics_103", "cicd_basics_101"],
+  "projects": [
+    "IaC implementation",
+    "Config management system",
+    "Cloud automation pipeline"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "basic_network_001",
+  "title": "Network Fundamentals",
+  "description": "Understanding basic networking concepts, protocols, and troubleshooting",
+  "level": "basic",
+  "courses": [
+    "networking_101",
+    "protocols_102",
+    "network_tools_103"
+  ],
+  "skills": [
+    "TCP/IP basics",
+    "DNS understanding",
+    "HTTP/HTTPS",
+    "network tools",
+    "basic troubleshooting",
+    "security fundamentals"
+  ]
+}

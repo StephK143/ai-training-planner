@@ -1,0 +1,24 @@
+{
+  "id": "distributed_systems_301",
+  "title": "Distributed Systems Architecture",
+  "description": "Master distributed systems design and implementation",
+  "hours": 30,
+  "url": "https://example.com/courses/distributed-systems-301",
+  "relatedBadge": "expert_softarch_001",
+  "topics": [
+    "Distributed patterns",
+    "Consistency models",
+    "Fault tolerance",
+    "Scalability",
+    "Data partitioning",
+    "Consensus protocols",
+    "System boundaries",
+    "Communication patterns"
+  ],
+  "prerequisites": ["arch_patterns_201", "system_design_202"],
+  "projects": [
+    "Distributed design",
+    "System implementation",
+    "Fault tolerance"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "api_auth_102",
+  "title": "API Authentication and Security",
+  "description": "Master API security, authentication, and authorization patterns",
+  "hours": 8,
+  "url": "https://example.com/courses/api-auth-102",
+  "relatedBadge": "basic_api_001",
+  "topics": [
+    "Authentication methods",
+    "JWT tokens",
+    "OAuth basics",
+    "API keys",
+    "Rate limiting",
+    "CORS",
+    "Security best practices",
+    "Error handling"
+  ],
+  "prerequisites": ["api_basics_101"],
+  "projects": [
+    "Secure API implementation",
+    "OAuth integration",
+    "Rate limiter development"
+  ]
+}

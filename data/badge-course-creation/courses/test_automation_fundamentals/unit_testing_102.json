@@ -1,0 +1,24 @@
+{
+  "id": "unit_testing_102",
+  "title": "Unit Testing and TDD",
+  "description": "Master unit testing techniques and Test-Driven Development practices",
+  "hours": 10,
+  "url": "https://example.com/courses/unit-testing-102",
+  "relatedBadge": "basic_testing_001",
+  "topics": [
+    "Unit testing principles",
+    "Test-Driven Development",
+    "Testing frameworks",
+    "Mocking and stubbing",
+    "Code coverage",
+    "Test organization",
+    "Continuous testing",
+    "Refactoring practices"
+  ],
+  "prerequisites": ["test_basics_101"],
+  "projects": [
+    "TDD project implementation",
+    "Unit test suite development",
+    "Code coverage analysis"
+  ]
+}

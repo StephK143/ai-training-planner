@@ -1,0 +1,24 @@
+{
+  "id": "advanced_automation_202",
+  "title": "Advanced Test Automation",
+  "description": "Master advanced test automation frameworks and practices",
+  "hours": 18,
+  "url": "https://example.com/courses/advanced-automation-202",
+  "relatedBadge": "intermediate_testing_001",
+  "topics": [
+    "Automation frameworks",
+    "CI/CD integration",
+    "Test containers",
+    "API testing",
+    "UI automation",
+    "Mobile testing",
+    "Cross-browser testing",
+    "Parallel execution"
+  ],
+  "prerequisites": ["testing_basics_101", "automation_basics_101"],
+  "projects": [
+    "Framework development",
+    "CI/CD integration",
+    "Test containers"
+  ]
+}

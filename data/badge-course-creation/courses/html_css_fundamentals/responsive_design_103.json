@@ -1,0 +1,24 @@
+{
+  "id": "responsive_design_103",
+  "title": "Responsive Web Design",
+  "description": "Master responsive design principles, mobile-first approach, and modern layout techniques",
+  "hours": 8,
+  "url": "https://example.com/courses/responsive-design-103",
+  "relatedBadge": "basic_htmlcss_001",
+  "topics": [
+    "Mobile-first design",
+    "Media queries",
+    "Responsive images",
+    "CSS Grid layouts",
+    "Flexbox advanced usage",
+    "Performance optimization",
+    "CSS variables",
+    "Modern CSS features"
+  ],
+  "prerequisites": ["html_basics_101", "css_basics_102"],
+  "projects": [
+    "Responsive portfolio site",
+    "E-commerce product grid",
+    "Mobile-first landing page"
+  ]
+}

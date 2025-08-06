@@ -1,0 +1,24 @@
+{
+  "id": "orchestration_patterns_203",
+  "title": "Advanced Orchestration Patterns",
+  "description": "Learn advanced container orchestration patterns and implementation strategies",
+  "hours": 15,
+  "url": "https://example.com/courses/orchestration-patterns-203",
+  "relatedBadge": "intermediate_container_001",
+  "topics": [
+    "Service mesh implementation",
+    "Advanced scheduling",
+    "Auto-scaling strategies",
+    "StatefulSet management",
+    "Custom controllers",
+    "Operators pattern",
+    "Multi-cluster management",
+    "Disaster recovery"
+  ],
+  "prerequisites": ["kubernetes_201", "container_security_202"],
+  "projects": [
+    "Service mesh deployment",
+    "Custom operator development",
+    "Advanced orchestration system"
+  ]
+}

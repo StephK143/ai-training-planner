@@ -1,0 +1,24 @@
+{
+  "id": "performance_optimization_301",
+  "title": "Advanced Performance Optimization",
+  "description": "Master advanced performance optimization techniques",
+  "hours": 30,
+  "url": "https://example.com/courses/performance-optimization-301",
+  "relatedBadge": "expert_perf_001",
+  "topics": [
+    "System optimization",
+    "Memory optimization",
+    "CPU optimization",
+    "Network optimization",
+    "Database optimization",
+    "Cache strategies",
+    "Code optimization",
+    "Resource management"
+  ],
+  "prerequisites": ["performance_optimization_201"],
+  "projects": [
+    "System optimization",
+    "Memory profiling",
+    "Performance tuning"
+  ]
+}

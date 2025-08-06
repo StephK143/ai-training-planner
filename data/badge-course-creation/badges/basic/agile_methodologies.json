@@ -1,0 +1,19 @@
+{
+  "id": "basic_agile_001",
+  "title": "Agile Methodologies",
+  "description": "Learn Agile principles, Scrum framework, and basic project management practices",
+  "level": "basic",
+  "courses": [
+    "agile_basics_101",
+    "scrum_fundamentals_102",
+    "kanban_basics_103"
+  ],
+  "skills": [
+    "Agile principles",
+    "Scrum framework",
+    "Kanban basics",
+    "sprint planning",
+    "user stories",
+    "estimation techniques"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "intermediate_git_001",
+  "title": "Advanced Git & Collaboration",
+  "description": "Master advanced Git workflows, repository management, and team collaboration practices",
+  "level": "intermediate",
+  "courses": [
+    "git_advanced_201",
+    "git_workflow_202",
+    "git_collaboration_203"
+  ],
+  "skills": [
+    "advanced branching strategies",
+    "repository management",
+    "conflict resolution",
+    "git hooks",
+    "submodules",
+    "team workflows"
+  ]
+}

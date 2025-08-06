@@ -1,0 +1,24 @@
+{
+  "id": "networking_101",
+  "title": "Networking Basics",
+  "description": "Understanding fundamental networking concepts, protocols, and architecture",
+  "hours": 8,
+  "url": "https://example.com/courses/networking-101",
+  "relatedBadge": "basic_network_001",
+  "topics": [
+    "OSI model",
+    "TCP/IP protocol suite",
+    "IP addressing and subnetting",
+    "Network topology",
+    "Basic network devices",
+    "DNS fundamentals",
+    "DHCP basics",
+    "Network troubleshooting"
+  ],
+  "prerequisites": [],
+  "projects": [
+    "Network diagram creation",
+    "Basic network setup",
+    "Troubleshooting scenarios"
+  ]
+}
