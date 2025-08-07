@@ -23,6 +23,29 @@ except Exception as e:
     print(f"Error initializing TrainingPlanner: {e}")
     planner = None
 
+@app.route('/api/users')
+def get_users():
+    try:
+        if not planner:
+            return jsonify({'error': 'Training planner not initialized'}), 500
+        
+        users_data = []
+        for user_id, user in planner.users.items():
+            users_data.append({
+                'id': user.id,
+                'name': user.name,
+                'job_title': user.job_title,
+                'description': user.description,
+                'completed_badges': user.completed_badges,
+                'completed_courses': user.completed_courses,
+                'in_progress_courses': user.in_progress_courses
+            })
+        
+        return jsonify(users_data)
+    except Exception as e:
+        print(f"Error in get_users: {e}")
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/skill-tree-data')
 def get_skill_tree_data():
     try:

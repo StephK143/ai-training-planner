@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import UserSelector from "./components/UserSelector";
+import { useUsers } from "./hooks/useUsers";
 
 interface Node {
   id: string;
@@ -22,32 +24,80 @@ interface SkillTreeProps {
 
 const SkillTree: React.FC<SkillTreeProps> = (props) => {
   const { nodes } = props;
+  const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
+  const { users, loading: loadingUsers } = useUsers();
+  
   const badges = nodes.filter((node) => node.type === "badge");
+  const selectedUser = users.find(user => user.id === selectedUserId);
+  
+  const filteredBadges = selectedUser 
+    ? badges.filter(badge => selectedUser.completed_badges.includes(badge.id.replace('badge_', '')))
+    : badges;
+
   return (
     <div>
-      <h2>Badges</h2>
-      {badges.length === 0 ? (
+      <UserSelector 
+        users={users}
+        selectedUserId={selectedUserId}
+        onUserSelect={setSelectedUserId}
+      />
+      
+      <h2>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
+      {loadingUsers ? (
+        <div>Loading users...</div>
+      ) : filteredBadges.length === 0 ? (
         <div style={{ color: "#888", fontStyle: "italic" }}>
-          No badges to display. (Check if nodes prop is being passed correctly.)
+          {selectedUser ? "This user has no badges yet." : "No badges to display."}
         </div>
       ) : (
-        <ul>
-          {badges.map((badge) => (
-            <li
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+          gap: '1rem',
+          padding: '1rem',
+        }}>
+          {filteredBadges.map((badge) => (
+            <div
               key={badge.id}
               style={{
-                color: getNodeColor(badge.type, badge.level),
-                fontWeight: "bold",
-                marginBottom: "0.5em",
+                backgroundColor: 'white',
+                border: `2px solid ${getNodeColor(badge.type, badge.level)}`,
+                borderRadius: '8px',
+                padding: '1rem',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.5rem'
               }}
             >
-              {badge.name}{" "}
-              <span style={{ fontWeight: "normal", color: "#888" }}>
-                ({badge.level})
-              </span>
-            </li>
+              <div style={{
+                color: getNodeColor(badge.type, badge.level),
+                fontWeight: 'bold',
+                fontSize: '1.1rem',
+              }}>
+                {badge.name}
+              </div>
+              <div style={{
+                color: '#666',
+                fontSize: '0.9rem',
+                textTransform: 'capitalize',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}>
+                <span style={{
+                  backgroundColor: getNodeColor(badge.type, badge.level),
+                  color: 'white',
+                  padding: '0.2rem 0.5rem',
+                  borderRadius: '4px',
+                  fontSize: '0.8rem',
+                }}>
+                  {badge.level}
+                </span>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

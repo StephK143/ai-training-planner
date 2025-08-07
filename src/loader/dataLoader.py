@@ -2,6 +2,17 @@
 import json
 import os
 
+def load_users():
+    """Load user data from JSON file"""
+    try:
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        users_file = os.path.join(base_dir, "data", "users.json")
+        with open(users_file, 'r') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Error loading users: {e}")
+        return {}
+
 def load_courses():
     courses = {}
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

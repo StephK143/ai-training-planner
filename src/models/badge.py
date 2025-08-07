@@ -12,7 +12,7 @@ class Badge:
     def from_dict(cls, data):
         return cls(
             id=data.get('id'),
-            name=data.get('name'),
+            name=data.get('title'),  # Use 'title' from the JSON data
             description=data.get('description'),
             requirements=data.get('requirements', [])
         )

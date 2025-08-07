@@ -1,15 +1,17 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 from typing import Dict
-from src.loader.dataLoader import load_badges, load_courses
+from src.loader.dataLoader import load_badges, load_courses, load_users
 from src.models.badge import Badge
 from src.models.course import Course
+from src.models.user import User
 from src.llm.ollama_api import OllamaAPI
 
 class TrainingPlanner:
     def __init__(self, model_name: str = "llama2"):
         self.badges = {}
         self.courses = {}
+        self.users = {}
         self.graph = nx.DiGraph()
         self.llm = OllamaAPI(model=model_name)
         self.load_data()
@@ -18,12 +20,18 @@ class TrainingPlanner:
         # Load raw data
         badge_data = load_badges()
         course_data = load_courses()
+        user_data = load_users()
 
         # Convert to objects
         for badge_id, badge_dict in badge_data.items():
             badge = Badge.from_dict(badge_dict)
             self.badges[badge.id] = badge
             self.graph.add_node(f"badge_{badge.id}", type="badge", name=badge.name)
+
+        for user_id, user_dict in user_data.items():
+            user = User.from_dict(user_dict)
+            self.users[user.id] = user
+            self.graph.add_node(f"user_{user.id}", type="user", name=user.name)
 
         for course_id, course_dict in course_data.items():
             course = Course.from_dict(course_dict)

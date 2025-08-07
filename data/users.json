@@ -1,0 +1,107 @@
+{
+  "user_001": {
+    "id": "user_001",
+    "name": "Sarah Chen",
+    "job_title": "Junior Software Developer",
+    "description": "Recent bootcamp graduate transitioning into software development. Focused on web technologies and eager to build a strong foundation in software engineering practices.",
+    "completed_badges": ["basic_git_001", "basic_htmlcss_001"],
+    "completed_courses": [
+      "git_basics_101",
+      "git_workflow_102",
+      "html_basics_101",
+      "css_basics_102",
+      "js_basics_101"
+    ],
+    "in_progress_courses": [
+      "python_basics_101",
+      "api_basics_101"
+    ]
+  },
+  "user_002": {
+    "id": "user_002",
+    "name": "Marcus Rodriguez",
+    "job_title": "Mid-level Backend Engineer",
+    "description": "3 years experience in backend development. Specializes in API design and database optimization. Looking to advance into system architecture.",
+    "completed_badges": ["basic_api_001", "basic_sql_001", "intermediate_backend_001"],
+    "completed_courses": [
+      "api_basics_101",
+      "api_auth_102",
+      "api_testing_103",
+      "sql_basics_101",
+      "sql_queries_102",
+      "data_manipulation_103",
+      "backend_arch_201"
+    ],
+    "in_progress_courses": [
+      "system_design_202",
+      "scalability_202"
+    ]
+  },
+  "user_003": {
+    "id": "user_003",
+    "name": "Emily Watson",
+    "job_title": "Senior DevOps Engineer",
+    "description": "7 years of experience in DevOps and cloud infrastructure. Passionate about automation and scalable systems. Mentors junior engineers in CI/CD practices.",
+    "completed_badges": [
+      "basic_cloud_001",
+      "basic_docker_001",
+      "intermediate_container_001",
+      "intermediate_automation_001"
+    ],
+    "completed_courses": [
+      "docker_basics_101",
+      "container_ops_102",
+      "docker_compose_103",
+      "kubernetes_201",
+      "container_security_202",
+      "cicd_basics_101",
+      "pipeline_fundamentals_102",
+      "automation_basics_103"
+    ],
+    "in_progress_courses": [
+      "cloud_architecture_201",
+      "scalability_patterns_202"
+    ]
+  },
+  "user_004": {
+    "id": "user_004",
+    "name": "Alex Kim",
+    "job_title": "Data Analyst",
+    "description": "2 years experience in data analysis. Strong SQL skills and developing expertise in Python for data processing. Interested in advancing to data engineering.",
+    "completed_badges": ["basic_sql_001", "basic_python_001"],
+    "completed_courses": [
+      "sql_basics_101",
+      "sql_queries_102",
+      "data_manipulation_103",
+      "python_basics_101",
+      "python_functions_102"
+    ],
+    "in_progress_courses": [
+      "data_modeling_202",
+      "python_oop_103"
+    ]
+  },
+  "user_005": {
+    "id": "user_005",
+    "name": "Rachel Thompson",
+    "job_title": "Lead Software Engineer",
+    "description": "10 years of full-stack development experience. Focuses on architectural decisions and team leadership. Advocates for security best practices.",
+    "completed_badges": [
+      "intermediate_architecture_001",
+      "intermediate_security_001",
+      "expert_techlead_001"
+    ],
+    "completed_courses": [
+      "arch_patterns_201",
+      "system_design_202",
+      "security_fundamentals_101",
+      "web_security_102",
+      "advanced_security_201",
+      "tech_leadership_301"
+    ],
+    "in_progress_courses": [
+      "technical_strategy_303",
+      "architecture_governance_302"
+    ]
+  }
+}
