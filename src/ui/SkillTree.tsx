@@ -404,12 +404,12 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
         </Button>
 
         <Drawer
-          anchor="right"
+          anchor="bottom"
           open={isAdvisorOpen}
           onClose={() => setIsAdvisorOpen(false)}
           sx={{
             "& .MuiDrawer-paper": {
-              width: "400px",
+              width: "100%",
               backgroundColor: "#1a1a2e",
               color: "#e3f2fd",
             },

@@ -99,7 +99,7 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
 
   return (
     <div>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom sx={{ color: '#e3f2fd' }}>
         Career Path Advisor
       </Typography>
 
@@ -115,6 +115,28 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
           setPreferences(e.target.value)
         }
         margin="normal"
+        sx={{
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: '#4f5b62',
+            },
+            '&:hover fieldset': {
+              borderColor: '#90caf9',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: '#90caf9',
+            },
+          },
+          '& .MuiInputLabel-root': {
+            color: '#90caf9',
+          },
+          '& .MuiOutlinedInput-input': {
+            color: '#e3f2fd',
+          },
+          '& .MuiInputLabel-root.Mui-focused': {
+            color: '#90caf9',
+          },
+        }}
       />
 
       <Button
@@ -122,7 +144,18 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
         color="primary"
         onClick={getCareerPaths}
         disabled={loading || !preferences}
-        sx={{ mt: 2, mb: 4 }}
+        sx={{ 
+          mt: 2, 
+          mb: 4,
+          backgroundColor: '#1976d2',
+          '&:hover': {
+            backgroundColor: '#2196f3',
+          },
+          '&.Mui-disabled': {
+            backgroundColor: '#1e293b',
+            color: '#90a4ae',
+          }
+        }}
       >
         {loading ? <CircularProgress size={24} /> : "Get Career Paths"}
       </Button>
@@ -139,40 +172,45 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
           sx={{
             mb: 2,
             cursor: "pointer",
-            border: selectedPath === path ? "2px solid primary.main" : "none",
+            backgroundColor: '#1e1e2f',
+            border: selectedPath === path ? "2px solid #90caf9" : "1px solid #4f5b62",
+            '&:hover': {
+              borderColor: '#90caf9',
+              boxShadow: '0 0 10px rgba(144, 202, 249, 0.2)',
+            },
           }}
           onClick={() => setSelectedPath(path)}
         >
           <CardContent>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{ color: '#e3f2fd' }}>
               Career Path {index + 1}
             </Typography>
-            <Typography variant="body1">{path.description}</Typography>
+            <Typography variant="body1" sx={{ color: '#e3f2fd' }}>{path.description}</Typography>
 
-            <Typography variant="subtitle1" sx={{ mt: 2 }}>
+            <Typography variant="subtitle1" sx={{ mt: 2, color: '#90caf9' }}>
               Required Courses:
             </Typography>
-            <ul>
+            <ul style={{ color: '#e3f2fd' }}>
               {path.courses.map((course) => (
                 <li key={course.id}>{course.name}</li>
               ))}
             </ul>
 
-            <Typography variant="subtitle1">Required Badges:</Typography>
-            <ul>
+            <Typography variant="subtitle1" sx={{ color: '#90caf9' }}>Required Badges:</Typography>
+            <ul style={{ color: '#e3f2fd' }}>
               {path.badges.map((badge) => (
                 <li key={badge.id}>{badge.name}</li>
               ))}
             </ul>
 
-            <Typography variant="body2" color="textSecondary">
-              Estimated Time: {path.estimatedTime}
+            <Typography variant="body2" sx={{ color: '#90caf9' }}>
+              Estimated Time: <span style={{ color: '#e3f2fd' }}>{path.estimatedTime}</span>
             </Typography>
 
-            <Typography variant="subtitle1" sx={{ mt: 2 }}>
+            <Typography variant="subtitle1" sx={{ mt: 2, color: '#90caf9' }}>
               Key Milestones:
             </Typography>
-            <ul>
+            <ul style={{ color: '#e3f2fd' }}>
               {path.milestones.map((milestone, i) => (
                 <li key={i}>{milestone}</li>
               ))}
@@ -195,6 +233,28 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
               setFeedback(e.target.value)
             }
             margin="normal"
+            sx={{
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: '#4f5b62',
+                },
+                '&:hover fieldset': {
+                  borderColor: '#90caf9',
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#90caf9',
+                },
+              },
+              '& .MuiInputLabel-root': {
+                color: '#90caf9',
+              },
+              '& .MuiOutlinedInput-input': {
+                color: '#e3f2fd',
+              },
+              '& .MuiInputLabel-root.Mui-focused': {
+                color: '#90caf9',
+              },
+            }}
           />
 
           <Button
@@ -202,7 +262,17 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
             color="secondary"
             onClick={refinePath}
             disabled={loading || !feedback}
-            sx={{ mt: 2 }}
+            sx={{ 
+              mt: 2,
+              backgroundColor: '#9c27b0',
+              '&:hover': {
+                backgroundColor: '#ba68c8',
+              },
+              '&.Mui-disabled': {
+                backgroundColor: '#1e293b',
+                color: '#90a4ae',
+              }
+            }}
           >
             {loading ? <CircularProgress size={24} /> : "Refine Path"}
           </Button>
@@ -211,7 +281,14 @@ export const CareerAdvisor: React.FC<Props> = ({ userData, onPathSelect }) => {
             variant="contained"
             color="primary"
             onClick={() => onPathSelect(selectedPath)}
-            sx={{ mt: 2, ml: 2 }}
+            sx={{ 
+              mt: 2, 
+              ml: 2,
+              backgroundColor: '#1976d2',
+              '&:hover': {
+                backgroundColor: '#2196f3',
+              }
+            }}
           >
             Select This Path
           </Button>
