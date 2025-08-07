@@ -48,16 +48,16 @@ function getNodeColor(type: string, level: string): string {
   if (type === "badge") {
     switch (level) {
       case "basic":
-        return "#4CAF50";
+        return "#81c784"; // lighter green
       case "intermediate":
-        return "#2196F3";
+        return "#64b5f6"; // lighter blue
       case "expert":
-        return "#9C27B0";
+        return "#ba68c8"; // lighter purple
       default:
-        return "#666";
+        return "#90a4ae";
     }
   }
-  return "#FF9800"; // course color
+  return "#ffb74d"; // lighter orange for course color
 }
 
 // Get color for completion status
@@ -134,8 +134,8 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
   const inProgressCourses = selectedUser?.in_progress_courses || [];
 
   return (
-    <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
-      <div>
+    <Box sx={{ position: "relative", width: "100%", height: "100%", bgcolor: "#121212", minHeight: "100vh" }}>
+      <div style={{ color: "#e3f2fd" }}>
         <UserSelector
           users={users}
           selectedUserId={selectedUserId}
@@ -149,8 +149,9 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                   onClick={() => setSelectedBadge(null)}
                   style={{
                     padding: "0.5rem 1rem",
-                    backgroundColor: "#f0f0f0",
-                    border: "1px solid #ddd",
+                    backgroundColor: "#2a2a3f",
+                    border: "1px solid #3f3f5f",
+                    color: "#e3f2fd",
                     borderRadius: "4px",
                     cursor: "pointer",
                     marginRight: "1rem",
@@ -158,7 +159,7 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                 >
                   ← Back to Badges
                 </button>
-                <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#e3f2fd" }}>
                   {selectedBadge.name} Courses
                 </span>
               </div>
@@ -176,19 +177,19 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                     <div
                       key={course.id}
                       style={{
-                        backgroundColor: "white",
+                        backgroundColor: "#1e1e2f",
                         border: `2px solid ${getNodeColor(
                           course.type,
                           course.level
                         )}`,
                         borderRadius: "8px",
                         padding: "1rem",
-                        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                        boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
                         display: "flex",
                         flexDirection: "column",
                         gap: "0.5rem",
                         opacity:
-                          status === "not-started" && selectedUser ? 0.7 : 1,
+                          status === "not-started" && selectedUser ? 0.5 : 1,
                       }}
                     >
                       <div
@@ -243,11 +244,11 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
             </>
           ) : (
             <>
-              <h2>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
+              <h2 style={{ color: "#e3f2fd" }}>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
               {loadingUsers ? (
-                <div>Loading users...</div>
+                <div style={{ color: "#e3f2fd" }}>Loading users...</div>
               ) : filteredBadges.length === 0 ? (
-                <div style={{ color: "#888", fontStyle: "italic" }}>
+                <div style={{ color: "#90a4ae", fontStyle: "italic" }}>
                   {selectedUser
                     ? "This user has no badges yet."
                     : "No badges to display."}
@@ -267,18 +268,28 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                       key={badge.id}
                       onClick={() => setSelectedBadge(badge)}
                       style={{
-                        backgroundColor: "white",
+                        backgroundColor: "#1e1e2f",
                         border: `2px solid ${getNodeColor(
                           badge.type,
                           badge.level
                         )}`,
                         borderRadius: "8px",
                         padding: "1rem",
-                        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                        boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
                         display: "flex",
                         flexDirection: "column",
                         gap: "0.5rem",
                         cursor: "pointer",
+                        transition: "all 0.2s ease",
+                        transform: "translateY(0)",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = "translateY(-2px)";
+                        e.currentTarget.style.boxShadow = "0 6px 8px rgba(0,0,0,0.4)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
                       }}
                     >
                       <div
@@ -336,7 +347,13 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
           anchor="right"
           open={isAdvisorOpen}
           onClose={() => setIsAdvisorOpen(false)}
-          sx={{ "& .MuiDrawer-paper": { width: "400px" } }}
+          sx={{ 
+            "& .MuiDrawer-paper": { 
+              width: "400px",
+              backgroundColor: "#1a1a2e",
+              color: "#e3f2fd"
+            } 
+          }}
         >
           <Box sx={{ p: 2 }}>
             <CareerAdvisor

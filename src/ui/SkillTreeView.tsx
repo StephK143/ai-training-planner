@@ -9,7 +9,16 @@ const SkillTreeView: React.FC = () => {
   if (error) return <div>Error loading skill tree: {error}</div>;
 
   return (
-    <div className="skill-tree-container">
+    <div
+      className="skill-tree-container"
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#121212",
+        minHeight: "100vh",
+      }}
+    >
       <h1>Proof of Concept</h1>
       <h2>AI Career and Training Plan</h2>
       <SkillTree nodes={nodes} links={links} />
