@@ -82,7 +82,9 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
     : [];
 
   // For the selected user, mark courses as completed, in-progress, or not started
-  const getCourseStatus = (courseId: string): "completed" | "in-progress" | "not-started" | undefined => {
+  const getCourseStatus = (
+    courseId: string
+  ): "completed" | "in-progress" | "not-started" | undefined => {
     if (!selectedUser) return undefined;
     const plainCourseId = courseId.replace("course_", "");
     if (selectedUser.completed_courses.includes(plainCourseId))
@@ -146,7 +148,8 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "0.5rem",
-                      opacity: status === "not-started" && selectedUser ? 0.7 : 1,
+                      opacity:
+                        status === "not-started" && selectedUser ? 0.7 : 1,
                     }}
                   >
                     <div
