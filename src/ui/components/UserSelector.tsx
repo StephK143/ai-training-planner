@@ -20,7 +20,7 @@ const UserSelector: React.FC<UserSelectorProps> = ({
   return (
     <div
       style={{
-        position: "absolute",
+        position: "fixed",
         top: "1rem",
         right: "1rem",
         zIndex: 1000,

@@ -19,8 +19,8 @@ const SkillTreeView: React.FC = () => {
         minHeight: "100vh",
       }}
     >
-      <h1>Proof of Concept</h1>
-      <h2>AI Career and Training Plan</h2>
+      <h1>AI Career and Training Plan</h1>
+      <h3>Proof of Concept</h3>
       <SkillTree nodes={nodes} links={links} />
     </div>
   );

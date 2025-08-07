@@ -163,6 +163,7 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                     borderRadius: "4px",
                     cursor: "pointer",
                     marginRight: "1rem",
+                    float: "left",
                   }}
                 >
                   ← Back to Badges
