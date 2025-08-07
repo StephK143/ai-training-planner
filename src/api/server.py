@@ -64,7 +64,8 @@ def get_skill_tree_data():
                 'id': f'badge_{badge_id}',
                 'name': badge.name,
                 'type': 'badge',
-                'level': get_badge_level(badge_id)
+                'level': get_badge_level(badge_id),
+                'description': badge.description
             })
     except Exception as e:
         print(f"Error in get_skill_tree_data: {e}")
@@ -76,7 +77,8 @@ def get_skill_tree_data():
             'id': f'course_{course_id}',
             'name': course.name,
             'type': 'course',
-            'level': get_course_level(course_id)
+            'level': get_course_level(course_id),
+            'description': course.description
         })
     
     # Add links from relationships

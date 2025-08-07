@@ -9,6 +9,7 @@ interface Node {
   name: string;
   type: "badge" | "course";
   level: "basic" | "intermediate" | "expert";
+  description?: string;
 }
 
 interface Link {
@@ -267,6 +268,19 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                       >
                         {course.name}
                       </div>
+                      {course.description ? (
+                        <div
+                          style={{
+                            color: "#e3f2fd",
+                            fontSize: "0.9rem",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.4",
+                            textAlign: "center",
+                          }}
+                        >
+                          {course.description}
+                        </div>
+                      ) : null}
                     </div>
                   );
                 })}
@@ -335,9 +349,21 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                       >
                         {badge.name}
                       </div>
+                      {badge.description ? (
+                        <div
+                          style={{
+                            color: "#e3f2fd",
+                            fontSize: "0.9rem",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.4",
+                          }}
+                        >
+                          {badge.description}
+                        </div>
+                      ) : null}
                       <div
                         style={{
-                          color: "#666",
+                          color: "#90a4ae",
                           fontSize: "0.9rem",
                           textTransform: "capitalize",
                           display: "flex",

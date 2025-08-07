@@ -19,7 +19,8 @@ export const useSkillTreeData = () => {
           id: node.id,
           name: node.name,
           type: node.type,
-          level: node.level
+          level: node.level,
+          description: node.description
         }));
 
         const transformedLinks = data.links.map((link: any) => ({
