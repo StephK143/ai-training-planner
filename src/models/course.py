@@ -11,10 +11,15 @@ class Course:
 
     @classmethod
     def from_dict(cls, data):
+        # Convert single relatedBadge to a list if present
+        badges = []
+        if data.get('relatedBadge'):
+            badges.append(data.get('relatedBadge'))
+        
         return cls(
             id=data.get('id'),
             name=data.get('title'),  # Use 'title' from the JSON data
             description=data.get('description'),
             prerequisites=data.get('prerequisites', []),
-            badges=data.get('badges', [])
+            badges=badges
         )
