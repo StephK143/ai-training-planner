@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import UserSelector from "./components/UserSelector";
 import { useUsers } from "./hooks/useUsers";
+import { CareerAdvisor } from "./CareerAdvisor";
+import { Button, Box, Drawer } from "@mui/material";
 
 interface Node {
   id: string;
@@ -41,10 +43,42 @@ const sortByLevel = (a: Node, b: Node): number => {
   return getLevelPriority(a.level) - getLevelPriority(b.level);
 };
 
+// Get the appropriate color for nodes based on type and level
+function getNodeColor(type: string, level: string): string {
+  if (type === "badge") {
+    switch (level) {
+      case "basic":
+        return "#4CAF50";
+      case "intermediate":
+        return "#2196F3";
+      case "expert":
+        return "#9C27B0";
+      default:
+        return "#666";
+    }
+  }
+  return "#FF9800"; // course color
+}
+
+// Get color for completion status
+function getStatusColor(status: string): string {
+  switch (status) {
+    case "completed":
+      return "#4CAF50";
+    case "in-progress":
+      return "#2196F3";
+    case "not-started":
+      return "#757575";
+    default:
+      return "#666";
+  }
+}
+
 const SkillTree: React.FC<SkillTreeProps> = (props) => {
   const { nodes, links } = props;
   const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
   const [selectedBadge, setSelectedBadge] = useState<Node | null>(null);
+  const [isAdvisorOpen, setIsAdvisorOpen] = useState(false);
   const { users, loading: loadingUsers } = useUsers();
 
   const badges = nodes.filter((node) => node.type === "badge");
@@ -94,126 +128,40 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
     return "not-started";
   };
 
-  return (
-    <div>
-      <UserSelector
-        users={users}
-        selectedUserId={selectedUserId}
-        onUserSelect={setSelectedUserId}
-      />
+  // Get the lists of completed and in-progress items for the career advisor
+  const completedBadges = selectedUser?.completed_badges || [];
+  const completedCourses = selectedUser?.completed_courses || [];
+  const inProgressCourses = selectedUser?.in_progress_courses || [];
 
+  return (
+    <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
       <div>
-        {selectedBadge ? (
-          <>
-            <div style={{ marginBottom: "1rem" }}>
-              <button
-                onClick={() => setSelectedBadge(null)}
-                style={{
-                  padding: "0.5rem 1rem",
-                  backgroundColor: "#f0f0f0",
-                  border: "1px solid #ddd",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                  marginRight: "1rem",
-                }}
-              >
-                ← Back to Badges
-              </button>
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
-                {selectedBadge.name} Courses
-              </span>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-                gap: "1rem",
-                padding: "1rem",
-              }}
-            >
-              {badgeCourses.map((course) => {
-                const status = getCourseStatus(course.id);
-                return (
-                  <div
-                    key={course.id}
-                    style={{
-                      backgroundColor: "white",
-                      border: `2px solid ${getNodeColor(
-                        course.type,
-                        course.level
-                      )}`,
-                      borderRadius: "8px",
-                      padding: "1rem",
-                      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: "0.5rem",
-                      opacity:
-                        status === "not-started" && selectedUser ? 0.7 : 1,
-                    }}
-                  >
-                    <div
-                      style={{
-                        color: getNodeColor(course.type, course.level),
-                        fontWeight: "bold",
-                        fontSize: "1.1rem",
-                      }}
-                    >
-                      {course.name}
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.5rem",
-                        flexWrap: "wrap",
-                      }}
-                    >
-                      <span
-                        style={{
-                          backgroundColor: getNodeColor(
-                            course.type,
-                            course.level
-                          ),
-                          color: "white",
-                          padding: "0.2rem 0.5rem",
-                          borderRadius: "4px",
-                          fontSize: "0.8rem",
-                        }}
-                      >
-                        {course.level}
-                      </span>
-                      {status && (
-                        <span
-                          style={{
-                            backgroundColor: getStatusColor(status),
-                            color: "white",
-                            padding: "0.2rem 0.5rem",
-                            borderRadius: "4px",
-                            fontSize: "0.8rem",
-                          }}
-                        >
-                          {status.replace("-", " ")}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </>
-        ) : (
-          <>
-            <h2>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
-            {loadingUsers ? (
-              <div>Loading users...</div>
-            ) : filteredBadges.length === 0 ? (
-              <div style={{ color: "#888", fontStyle: "italic" }}>
-                {selectedUser
-                  ? "This user has no badges yet."
-                  : "No badges to display."}
+        <UserSelector
+          users={users}
+          selectedUserId={selectedUserId}
+          onUserSelect={setSelectedUserId}
+        />
+        <div>
+          {selectedBadge ? (
+            <>
+              <div style={{ marginBottom: "1rem" }}>
+                <button
+                  onClick={() => setSelectedBadge(null)}
+                  style={{
+                    padding: "0.5rem 1rem",
+                    backgroundColor: "#f0f0f0",
+                    border: "1px solid #ddd",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                    marginRight: "1rem",
+                  }}
+                >
+                  ← Back to Badges
+                </button>
+                <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                  {selectedBadge.name} Courses
+                </span>
               </div>
-            ) : (
               <div
                 style={{
                   display: "grid",
@@ -222,97 +170,193 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                   padding: "1rem",
                 }}
               >
-                {filteredBadges.map((badge) => (
-                  <div
-                    key={badge.id}
-                    onClick={() => setSelectedBadge(badge)}
-                    style={{
-                      backgroundColor: "white",
-                      border: `2px solid ${getNodeColor(
-                        badge.type,
-                        badge.level
-                      )}`,
-                      borderRadius: "8px",
-                      padding: "1rem",
-                      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: "0.5rem",
-                      cursor: "pointer",
-                    }}
-                  >
+                {badgeCourses.map((course) => {
+                  const status = getCourseStatus(course.id);
+                  return (
                     <div
+                      key={course.id}
                       style={{
-                        color: getNodeColor(badge.type, badge.level),
-                        fontWeight: "bold",
-                        fontSize: "1.1rem",
-                      }}
-                    >
-                      {badge.name}
-                    </div>
-                    <div
-                      style={{
-                        color: "#666",
-                        fontSize: "0.9rem",
-                        textTransform: "capitalize",
+                        backgroundColor: "white",
+                        border: `2px solid ${getNodeColor(
+                          course.type,
+                          course.level
+                        )}`,
+                        borderRadius: "8px",
+                        padding: "1rem",
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                         display: "flex",
-                        alignItems: "center",
+                        flexDirection: "column",
                         gap: "0.5rem",
+                        opacity:
+                          status === "not-started" && selectedUser ? 0.7 : 1,
                       }}
                     >
-                      <span
+                      <div
                         style={{
-                          backgroundColor: getNodeColor(
-                            badge.type,
-                            badge.level
-                          ),
-                          color: "white",
-                          padding: "0.2rem 0.5rem",
-                          borderRadius: "4px",
-                          fontSize: "0.8rem",
+                          color: getNodeColor(course.type, course.level),
+                          fontWeight: "bold",
+                          fontSize: "1.1rem",
                         }}
                       >
-                        {badge.level}
-                      </span>
+                        {course.name}
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                          flexWrap: "wrap",
+                        }}
+                      >
+                        <span
+                          style={{
+                            backgroundColor: getNodeColor(
+                              course.type,
+                              course.level
+                            ),
+                            color: "white",
+                            padding: "0.2rem 0.5rem",
+                            borderRadius: "4px",
+                            fontSize: "0.8rem",
+                          }}
+                        >
+                          {course.level}
+                        </span>
+                        {status && (
+                          <span
+                            style={{
+                              backgroundColor: getStatusColor(status),
+                              color: "white",
+                              padding: "0.2rem 0.5rem",
+                              borderRadius: "4px",
+                              fontSize: "0.8rem",
+                            }}
+                          >
+                            {status.replace("-", " ")}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-            )}
-          </>
-        )}
+            </>
+          ) : (
+            <>
+              <h2>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
+              {loadingUsers ? (
+                <div>Loading users...</div>
+              ) : filteredBadges.length === 0 ? (
+                <div style={{ color: "#888", fontStyle: "italic" }}>
+                  {selectedUser
+                    ? "This user has no badges yet."
+                    : "No badges to display."}
+                </div>
+              ) : (
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns:
+                      "repeat(auto-fill, minmax(250px, 1fr))",
+                    gap: "1rem",
+                    padding: "1rem",
+                  }}
+                >
+                  {filteredBadges.map((badge) => (
+                    <div
+                      key={badge.id}
+                      onClick={() => setSelectedBadge(badge)}
+                      style={{
+                        backgroundColor: "white",
+                        border: `2px solid ${getNodeColor(
+                          badge.type,
+                          badge.level
+                        )}`,
+                        borderRadius: "8px",
+                        padding: "1rem",
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "0.5rem",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: getNodeColor(badge.type, badge.level),
+                          fontWeight: "bold",
+                          fontSize: "1.1rem",
+                        }}
+                      >
+                        {badge.name}
+                      </div>
+                      <div
+                        style={{
+                          color: "#666",
+                          fontSize: "0.9rem",
+                          textTransform: "capitalize",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                        }}
+                      >
+                        <span
+                          style={{
+                            backgroundColor: getNodeColor(
+                              badge.type,
+                              badge.level
+                            ),
+                            color: "white",
+                            padding: "0.2rem 0.5rem",
+                            borderRadius: "4px",
+                            fontSize: "0.8rem",
+                          }}
+                        >
+                          {badge.level}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </>
+          )}
+        </div>
+
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => setIsAdvisorOpen(true)}
+          sx={{ position: "fixed", bottom: 20, right: 20 }}
+        >
+          Open Career Advisor
+        </Button>
+
+        <Drawer
+          anchor="right"
+          open={isAdvisorOpen}
+          onClose={() => setIsAdvisorOpen(false)}
+          sx={{ "& .MuiDrawer-paper": { width: "400px" } }}
+        >
+          <Box sx={{ p: 2 }}>
+            <CareerAdvisor
+              userData={{
+                job_title: selectedUser?.job_title || "",
+                description: selectedUser?.description || "",
+                completed_badges: completedBadges,
+                completed_courses: completedCourses,
+                in_progress_courses: inProgressCourses,
+              }}
+              onPathSelect={(path) => {
+                // Handle path selection - you can update user preferences or course plan here
+                setIsAdvisorOpen(false);
+              }}
+            />
+          </Box>
+        </Drawer>
       </div>
-    </div>
+    </Box>
   );
 };
-
-function getNodeColor(type: string, level: string): string {
-  if (type === "badge") {
-    switch (level) {
-      case "basic":
-        return "#4CAF50";
-      case "intermediate":
-        return "#2196F3";
-      case "expert":
-        return "#9C27B0";
-      default:
-        return "#666";
-    }
-  }
-  return "#FF9800"; // course color
-}
-
-function getStatusColor(status: string): string {
-  switch (status) {
-    case "completed":
-      return "#4CAF50";
-    case "in-progress":
-      return "#2196F3";
-    case "not-started":
-      return "#757575";
-    default:
-      return "#666";
-  }
-}
 
 export default SkillTree;
