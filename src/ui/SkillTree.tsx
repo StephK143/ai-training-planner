@@ -342,6 +342,31 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                     >
                       <div
                         style={{
+                          color: "#90a4ae",
+                          fontSize: "0.9rem",
+                          textTransform: "capitalize",
+                          display: "flex",
+                          gap: "0.5rem",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <span
+                          style={{
+                            backgroundColor: getNodeColor(
+                              badge.type,
+                              badge.level
+                            ),
+                            color: "white",
+                            padding: "0.2rem 0.5rem",
+                            borderRadius: "4px",
+                            fontSize: "0.8rem",
+                          }}
+                        >
+                          {badge.level}
+                        </span>
+                      </div>
+                      <div
+                        style={{
                           color: getNodeColor(badge.type, badge.level),
                           fontWeight: "bold",
                           fontSize: "1.1rem",
@@ -361,31 +386,6 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                           {badge.description}
                         </div>
                       ) : null}
-                      <div
-                        style={{
-                          color: "#90a4ae",
-                          fontSize: "0.9rem",
-                          textTransform: "capitalize",
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "0.5rem",
-                        }}
-                      >
-                        <span
-                          style={{
-                            backgroundColor: getNodeColor(
-                              badge.type,
-                              badge.level
-                            ),
-                            color: "white",
-                            padding: "0.2rem 0.5rem",
-                            borderRadius: "4px",
-                            fontSize: "0.8rem",
-                          }}
-                        >
-                          {badge.level}
-                        </span>
-                      </div>
                     </div>
                   ))}
                 </div>
