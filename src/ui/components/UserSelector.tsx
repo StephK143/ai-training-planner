@@ -48,7 +48,7 @@ const UserSelector: React.FC<UserSelectorProps> = ({
             color: "#e3f2fd",
           }}
         >
-          All badges
+          Home (Not logged in)
         </option>
         {users.map((user) => (
           <option

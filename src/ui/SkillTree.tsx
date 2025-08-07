@@ -173,9 +173,21 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                     fontSize: "1.5rem",
                     fontWeight: "bold",
                     color: "#e3f2fd",
+                    display: "block",
+                    paddingTop: "3rem",
                   }}
                 >
-                  {selectedBadge.name} Courses
+                  Courses for
+                </span>
+                <span
+                  style={{
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                    color: "#e3f2fd",
+                    display: "block",
+                  }}
+                >
+                  {selectedBadge.name}
                 </span>
               </div>
               <div
@@ -209,19 +221,11 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                     >
                       <div
                         style={{
-                          color: getNodeColor(course.type, course.level),
-                          fontWeight: "bold",
-                          fontSize: "1.1rem",
-                        }}
-                      >
-                        {course.name}
-                      </div>
-                      <div
-                        style={{
                           display: "flex",
                           alignItems: "center",
                           gap: "0.5rem",
                           flexWrap: "wrap",
+                          justifyContent: "center",
                         }}
                       >
                         <span
@@ -234,6 +238,7 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                             padding: "0.2rem 0.5rem",
                             borderRadius: "4px",
                             fontSize: "0.8rem",
+                            textTransform: "capitalize",
                           }}
                         >
                           {course.level}
@@ -246,11 +251,21 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                               padding: "0.2rem 0.5rem",
                               borderRadius: "4px",
                               fontSize: "0.8rem",
+                              textTransform: "capitalize",
                             }}
                           >
                             {status.replace("-", " ")}
                           </span>
                         )}
+                      </div>
+                      <div
+                        style={{
+                          color: getNodeColor(course.type, course.level),
+                          fontWeight: "bold",
+                          fontSize: "1.1rem",
+                        }}
+                      >
+                        {course.name}
                       </div>
                     </div>
                   );
