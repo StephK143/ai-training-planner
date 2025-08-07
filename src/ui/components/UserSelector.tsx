@@ -38,25 +38,25 @@ const UserSelector: React.FC<UserSelectorProps> = ({
           fontSize: "1rem",
           minWidth: "200px",
           cursor: "pointer",
-          outline: "none"
+          outline: "none",
         }}
       >
-        <option 
+        <option
           value=""
           style={{
             backgroundColor: "#2a2a3f",
-            color: "#e3f2fd"
+            color: "#e3f2fd",
           }}
         >
           All badges
         </option>
         {users.map((user) => (
-          <option 
-            key={user.id} 
+          <option
+            key={user.id}
             value={user.id}
             style={{
               backgroundColor: "#2a2a3f",
-              color: "#e3f2fd"
+              color: "#e3f2fd",
             }}
           >
             {user.name} - {user.job_title}

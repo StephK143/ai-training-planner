@@ -134,7 +134,15 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
   const inProgressCourses = selectedUser?.in_progress_courses || [];
 
   return (
-    <Box sx={{ position: "relative", width: "100%", height: "100%", bgcolor: "#121212", minHeight: "100vh" }}>
+    <Box
+      sx={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        bgcolor: "#121212",
+        minHeight: "100vh",
+      }}
+    >
       <div style={{ color: "#e3f2fd" }}>
         <UserSelector
           users={users}
@@ -159,7 +167,13 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                 >
                   ← Back to Badges
                 </button>
-                <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#e3f2fd" }}>
+                <span
+                  style={{
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                    color: "#e3f2fd",
+                  }}
+                >
                   {selectedBadge.name} Courses
                 </span>
               </div>
@@ -244,7 +258,9 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
             </>
           ) : (
             <>
-              <h2 style={{ color: "#e3f2fd" }}>Badges {selectedUser && `- ${selectedUser.name}`}</h2>
+              <h2 style={{ color: "#e3f2fd" }}>
+                Badges {selectedUser && `- ${selectedUser.name}`}
+              </h2>
               {loadingUsers ? (
                 <div style={{ color: "#e3f2fd" }}>Loading users...</div>
               ) : filteredBadges.length === 0 ? (
@@ -285,11 +301,13 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.transform = "translateY(-2px)";
-                        e.currentTarget.style.boxShadow = "0 6px 8px rgba(0,0,0,0.4)";
+                        e.currentTarget.style.boxShadow =
+                          "0 6px 8px rgba(0,0,0,0.4)";
                       }}
                       onMouseLeave={(e) => {
                         e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
+                        e.currentTarget.style.boxShadow =
+                          "0 4px 6px rgba(0,0,0,0.3)";
                       }}
                     >
                       <div
@@ -347,12 +365,12 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
           anchor="right"
           open={isAdvisorOpen}
           onClose={() => setIsAdvisorOpen(false)}
-          sx={{ 
-            "& .MuiDrawer-paper": { 
+          sx={{
+            "& .MuiDrawer-paper": {
               width: "400px",
               backgroundColor: "#1a1a2e",
-              color: "#e3f2fd"
-            } 
+              color: "#e3f2fd",
+            },
           }}
         >
           <Box sx={{ p: 2 }}>
