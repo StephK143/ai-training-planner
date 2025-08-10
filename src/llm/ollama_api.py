@@ -1,11 +1,90 @@
 import requests
 import json
+import time
 from typing import Dict, Any, Optional
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 class OllamaAPI:
-    def __init__(self, base_url: str = "http://localhost:11434", model: str = "llama2"):
+    def __init__(self, base_url: str = "http://ollama:11434", model: str = "llama2", max_retries: int = 5):
         self.base_url = base_url.rstrip('/')
         self.model = model
+        
+        # Configure retry strategy
+        retry_strategy = Retry(
+            total=max_retries,
+            backoff_factor=2,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["GET", "POST"],
+        )
+        
+        # Create session with retry strategy
+        self.session = requests.Session()
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+        
+        # Try to connect to Ollama with a longer timeout for initial setup
+        if not self._wait_for_ollama(timeout=180):  # 3 minutes for initial setup
+            print("Warning: Could not connect to Ollama during initialization. Will retry on first use.")
+            # Don't raise exception immediately - allow lazy connection
+
+    def _wait_for_ollama(self, timeout: int = 300):  # Increased to 5 minutes
+        """Wait for Ollama to become available and for the model to be ready."""
+        start_time = time.time()
+        last_error = None
+        print(f"Attempting to connect to Ollama at {self.base_url}...")
+        
+        # First, wait for Ollama service to be available
+        while time.time() - start_time < timeout:
+            try:
+                response = self.session.get(f"{self.base_url}/api/tags", timeout=10)
+                response.raise_for_status()
+                print("Ollama API is responding...")
+                break
+            except requests.exceptions.RequestException as e:
+                last_error = str(e)
+                print(f"Waiting for Ollama API to become available... ({last_error})")
+                time.sleep(5)
+        else:
+            print(f"Ollama API did not become available after {timeout} seconds. Last error: {last_error}")
+            return False
+        
+        # Now wait for the model to be available
+        model_wait_timeout = 300  # Additional 5 minutes for model pulling
+        model_start_time = time.time()
+        
+        while time.time() - model_start_time < model_wait_timeout:
+            try:
+                response = self.session.get(f"{self.base_url}/api/tags", timeout=10)
+                response.raise_for_status()
+                models = response.json().get('models', [])
+                
+                if not models:
+                    print("No models available yet, waiting for model initialization...")
+                    time.sleep(10)
+                    continue
+                    
+                # Check if our target model is available
+                available_models = [model['name'].split(':')[0] for model in models]
+                target_model = self.model.split(':')[0]  # Remove tag if present
+                
+                if target_model in available_models:
+                    print(f"Successfully connected to Ollama and found model: {self.model}")
+                    return True
+                else:
+                    print(f"Model {self.model} not found. Available models: {available_models}. Still waiting...")
+                    time.sleep(10)
+                    continue
+                    
+            except requests.exceptions.RequestException as e:
+                last_error = str(e)
+                print(f"Error checking for model availability: {last_error}")
+                time.sleep(5)
+        
+        print(f"Model {self.model} was not available after waiting {model_wait_timeout} seconds")
+        print("Note: You may need to manually pull the model or check the ollama-init container logs")
+        return False
 
     def generate(self, prompt: str, system_prompt: Optional[str] = None, temperature: float = 0.7) -> str:
         """
@@ -31,7 +110,7 @@ class OllamaAPI:
             payload["system"] = system_prompt
             
         try:
-            response = requests.post(url, json=payload)
+            response = self.session.post(url, json=payload, stream=True)
             response.raise_for_status()
             
             # Ollama streams responses, so we need to process them
@@ -49,7 +128,11 @@ class OllamaAPI:
             return full_response.strip()
             
         except requests.exceptions.RequestException as e:
-            raise Exception(f"Error communicating with Ollama: {str(e)}")
+            error_msg = f"Error communicating with Ollama at {self.base_url}: {str(e)}"
+            print(error_msg)  # Add logging
+            if isinstance(e, requests.exceptions.ConnectionError):
+                error_msg += "\nConnection refused - Make sure Ollama is running and accessible"
+            raise Exception(error_msg)
 
     def get_models(self) -> list:
         """
@@ -59,11 +142,15 @@ class OllamaAPI:
             list: List of available model names
         """
         try:
-            response = requests.get(f"{self.base_url}/api/tags")
+            response = self.session.get(f"{self.base_url}/api/tags")
             response.raise_for_status()
             return [model['name'] for model in response.json()['models']]
         except requests.exceptions.RequestException as e:
-            raise Exception(f"Error getting models from Ollama: {str(e)})")
+            error_msg = f"Error getting models from Ollama: {str(e)}"
+            print(error_msg)  # Add logging
+            if isinstance(e, requests.exceptions.ConnectionError):
+                error_msg += "\nConnection refused - Make sure Ollama is running and accessible"
+            raise Exception(error_msg)
 
     def analyze_course_overlaps(self,
                             courses_to_badges: Dict[str, Dict],

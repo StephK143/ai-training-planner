@@ -94,11 +94,6 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
       : badges
   ).sort(sortByLevel);
 
-  // Find courses that contribute to the selected badge
-  console.log("Selected Badge:", selectedBadge);
-  console.log("All Links:", links);
-  console.log("All Courses:", courses);
-
   const badgeCourses = selectedBadge
     ? courses
         .filter((course) => {

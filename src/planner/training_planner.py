@@ -13,7 +13,16 @@ class TrainingPlanner:
         self.courses = {}
         self.users = {}
         self.graph = nx.DiGraph()
-        self.llm = OllamaAPI(model=model_name)
+        print("Initializing Ollama API...")  # Debug print
+        try:
+            self.llm = OllamaAPI(model=model_name)
+            # Test connection to Ollama
+            available_models = self.llm.get_models()
+            print(f"Available Ollama models: {available_models}")
+        except Exception as e:
+            print(f"Failed to initialize Ollama: {str(e)}")
+            raise
+        print("Loading training data...")  # Debug print
         self.load_data()
 
     def load_data(self):

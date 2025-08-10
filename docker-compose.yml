@@ -27,6 +27,8 @@ services:
       - PYTHONUNBUFFERED=1
     volumes:
       - ./data:/app/data:ro
+    depends_on:
+      - ollama
     healthcheck:
       test: curl -f http://localhost:5002/api/health
       interval: 30s
@@ -40,12 +42,28 @@ services:
       - "11434:11434"
     volumes:
       - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_ORIGINS=*
     restart: unless-stopped
-    healthcheck:
-      test: curl -f http://localhost:11434/api/health
-      interval: 30s
-      timeout: 10s
-      retries: 3
+
+  ollama-init:
+    image: curlimages/curl:latest
+    depends_on:
+      - ollama
+    restart: "no"
+    command: >
+      sh -c "
+        echo 'Waiting for Ollama to be ready...' &&
+        sleep 30 &&
+        while ! curl -s http://ollama:11434/api/tags > /dev/null; do
+          echo 'Waiting for Ollama API...' &&
+          sleep 5;
+        done &&
+        echo 'Ollama is ready, pulling llama2 model...' &&
+        curl -X POST http://ollama:11434/api/pull -d '{\"name\":\"llama2\"}' &&
+        echo 'Llama2 model pull initiated'
+      "
 
 volumes:
   ollama_data:
