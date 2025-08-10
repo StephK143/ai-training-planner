@@ -97,13 +97,11 @@ const SkillTree: React.FC<SkillTreeProps> = (props) => {
   const badgeCourses = selectedBadge
     ? courses
         .filter((course) => {
-          console.log("Checking course:", course.id);
           const matchingLinks = links.filter((link) => {
             const matches =
               link.type === "contributes" &&
               link.source === course.id &&
               link.target === selectedBadge.id;
-            console.log("Link check:", { link, matches });
             return matches;
           });
           return matchingLinks.length > 0;
