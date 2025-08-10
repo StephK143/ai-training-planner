@@ -1,0 +1,14 @@
+# Build and start the containers
+docker compose up --build
+
+# To stop the containers
+docker compose down
+
+# To view logs
+docker compose logs -f
+
+# To rebuild a specific service
+docker compose build <service_name>
+
+# To restart a specific service
+docker compose restart <service_name>

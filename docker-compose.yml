@@ -1,0 +1,52 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        NODE_ENV: production
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    healthcheck:
+      test: wget --quiet --tries=1 --spider http://localhost:80/
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=src/api/server.py
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data:ro
+    healthcheck:
+      test: curl -f http://localhost:5002/api/health
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    healthcheck:
+      test: curl -f http://localhost:11434/api/health
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  ollama_data:
+    name: ai_training_planner_ollama_data
