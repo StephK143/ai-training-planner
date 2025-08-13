@@ -17,43 +17,132 @@ class MCPClient:
         if self.session:
             await self.session.close()
 
-    async def create_chat_completion(
+    import json
+import aiohttp
+import os
+from typing import Dict, List, Optional
+from ..config.mcp_config import MCPConfig
+
+class MCPClient:
+    def __init__(self, config: MCPConfig = None):
+        self.config = config or MCPConfig()
+        # Use environment variable for MCP server URL when running in Docker
+        mcp_server_url = os.getenv("MCP_SERVER_URL")
+        if mcp_server_url:
+            self.base_url = mcp_server_url
+        else:
+            self.base_url = self.config.base_url
+        self.session: Optional[aiohttp.ClientSession] = None
+
+    async def __aenter__(self):
+        self.session = aiohttp.ClientSession()
+        return self
+
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        if self.session:
+            await self.session.close()
+
+    async def analyze_career_path(
         self,
-        messages: List[Dict[str, str]],
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None
-    ) -> Dict:
+        user_data: Dict,
+        career_preferences: str,
+        timeout: int = 60
+    ) -> Optional[Dict]:
         """
-        Send a chat completion request to the MCP server.
+        Call the career analysis endpoint.
         
         Args:
-            messages: List of message dictionaries with 'role' and 'content'
-            temperature: Optional override for config temperature
-            max_tokens: Optional override for config max_tokens
+            user_data: Dictionary containing user profile and progress
+            career_preferences: String describing career goals and preferences
+            timeout: Request timeout in seconds
+            
+        Returns:
+            Dictionary containing the analysis response or None if failed
         """
         if not self.session:
-            raise RuntimeError("Session not initialized. Use async with context manager.")
-
-        payload = {
-            "model": self.config.model,
-            "messages": messages,
-            "temperature": temperature or self.config.temperature,
-            "max_tokens": max_tokens or self.config.max_tokens,
-            "top_p": self.config.top_p
-        }
-
+            raise RuntimeError("Client session not initialized. Use 'async with' context manager.")
+        
         try:
             async with self.session.post(
-                f"{self.base_url}/v1/chat/completions",
-                json=payload
+                f"{self.base_url}/api/career/analyze",
+                json={
+                    "user_data": user_data,
+                    "career_preferences": career_preferences
+                },
+                timeout=aiohttp.ClientTimeout(total=timeout)
             ) as response:
-                if response.status != 200:
+                if response.status == 200:
+                    return await response.json()
+                else:
                     error_text = await response.text()
-                    raise Exception(f"MCP server error: {error_text}")
-                
-                return await response.json()
+                    raise Exception(f"API request failed with status {response.status}: {error_text}")
+                    
+        except aiohttp.ClientError as e:
+            raise Exception(f"Network error calling MCP server: {e}")
         except Exception as e:
-            raise Exception(f"Failed to communicate with MCP server: {str(e)}")
+            raise Exception(f"Error calling career analysis API: {e}")
+
+    async def refine_career_path(
+        self,
+        user_data: Dict,
+        selected_path: str,
+        user_feedback: str,
+        timeout: int = 60
+    ) -> Optional[Dict]:
+        """
+        Call the career refinement endpoint.
+        
+        Args:
+            user_data: Dictionary containing user profile
+            selected_path: The selected career path to refine
+            user_feedback: User's feedback on the path
+            timeout: Request timeout in seconds
+            
+        Returns:
+            Dictionary containing the refinement response or None if failed
+        """
+        if not self.session:
+            raise RuntimeError("Client session not initialized. Use 'async with' context manager.")
+        
+        try:
+            async with self.session.post(
+                f"{self.base_url}/api/career/refine",
+                json={
+                    "user_data": user_data,
+                    "selected_path": selected_path,
+                    "user_feedback": user_feedback
+                },
+                timeout=aiohttp.ClientTimeout(total=timeout)
+            ) as response:
+                if response.status == 200:
+                    return await response.json()
+                else:
+                    error_text = await response.text()
+                    raise Exception(f"API request failed with status {response.status}: {error_text}")
+                    
+        except aiohttp.ClientError as e:
+            raise Exception(f"Network error calling MCP server: {e}")
+        except Exception as e:
+            raise Exception(f"Error calling refinement API: {e}")
+
+    async def health_check(self) -> bool:
+        """
+        Check if the MCP server is healthy.
+        
+        Returns:
+            True if the server is healthy, False otherwise
+        """
+        if not self.session:
+            self.session = aiohttp.ClientSession()
+        
+        try:
+            async with self.session.get(
+                f"{self.base_url}/health",
+                timeout=aiohttp.ClientTimeout(total=10)
+            ) as response:
+                return response.status == 200
+        except:
+            return False
 
     def create_career_advisor_prompt(
         self,

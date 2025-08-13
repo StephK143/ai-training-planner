@@ -6,7 +6,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 class OllamaAPI:
-    def __init__(self, base_url: str = "http://ollama:11434", model: str = "llama2", max_retries: int = 5):
+    def __init__(self, base_url: str = "http://ollama:11434", model: str = "llama3.3:70b-instruct-q2_K", max_retries: int = 5):
         self.base_url = base_url.rstrip('/')
         self.model = model
         

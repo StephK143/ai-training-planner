@@ -25,12 +25,31 @@ services:
       - FLASK_ENV=production
       - FLASK_APP=src/api/server.py
       - PYTHONUNBUFFERED=1
+      - MCP_SERVER_URL=http://mcp-server:8080
     volumes:
       - ./data:/app/data:ro
     depends_on:
       - ollama
+      - mcp-server
     healthcheck:
       test: curl -f http://localhost:5002/api/health
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8080
+    healthcheck:
+      test: curl -f http://localhost:8080/health || exit 1
       interval: 30s
       timeout: 10s
       retries: 3
@@ -60,9 +79,9 @@ services:
           echo 'Waiting for Ollama API...' &&
           sleep 5;
         done &&
-        echo 'Ollama is ready, pulling llama2 model...' &&
-        curl -X POST http://ollama:11434/api/pull -d '{\"name\":\"llama2\"}' &&
-        echo 'Llama2 model pull initiated'
+        echo 'Ollama is ready, pulling llama3.3:70b-instruct-q2_K model...' &&
+        curl -X POST http://ollama:11434/api/pull -d '{\"name\":\"llama3.3:70b-instruct-q2_K\"}' &&
+        echo 'Llama3.3:70b-instruct-q2_K model pull initiated'
       "
 
 volumes:

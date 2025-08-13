@@ -8,7 +8,7 @@ from src.models.user import User
 from src.llm.ollama_api import OllamaAPI
 
 class TrainingPlanner:
-    def __init__(self, model_name: str = "llama2"):
+    def __init__(self, model_name: str = "llama3.3:70b-instruct-q2_K"):
         self.badges = {}
         self.courses = {}
         self.users = {}

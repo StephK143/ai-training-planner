@@ -3,12 +3,22 @@ from flask_cors import CORS
 import sys
 import os
 import json
+import asyncio
+from functools import wraps
 
 # Add the project root directory to the Python path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.insert(0, project_root)
 
 from src.planner.training_planner import TrainingPlanner
+from src.llm.career_advisor import CareerAdvisor
+
+# Async wrapper for Flask routes
+def async_route(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        return asyncio.run(f(*args, **kwargs))
+    return wrapper
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -20,9 +30,16 @@ PORT = 5002  # Changed to 5002 to avoid conflicts with AirPlay and other service
 
 try:
     planner = TrainingPlanner()
+    career_advisor = CareerAdvisor()
 except Exception as e:
-    print(f"Error initializing TrainingPlanner: {e}")
+    print(f"Error initializing services: {e}")
     planner = None
+    career_advisor = None
+
+@app.route('/api/health')
+def health_check():
+    """Health check endpoint for Docker health checks."""
+    return jsonify({'status': 'healthy', 'service': 'ai-training-planner-backend'})
 
 @app.route('/api/users')
 def get_users():
@@ -123,7 +140,8 @@ def get_course_level(course_id: str) -> str:
     return 'basic'
 
 @app.route('/api/career/paths', methods=['POST'])
-def get_career_paths():
+@async_route
+async def get_career_paths():
     try:
         from flask import request
         data = request.get_json()
@@ -135,38 +153,19 @@ def get_career_paths():
                 'error': 'Missing required fields: user_data and career_preferences'
             }), 400
 
-        # Use the LLM to generate career paths
-        if planner and planner.llm:
-            system_prompt = """You are a career advisor for technology professionals. Based on the user's profile and preferences, 
-            suggest 3 distinct career paths. Each path should have a clear description, required courses and badges, estimated 
-            completion time, and key milestones. Focus on making each path unique and aligned with different aspects of their interests.
-            Structure the response exactly as a JSON array containing objects with 'description', 'courses', 'badges', 'estimatedTime', 
-            and 'milestones' fields."""
-
-            user_prompt = f"""
-            User Profile:
-            - Current Role: {user_data.get('job_title', 'Not specified')}
-            - Background: {user_data.get('description', 'Not specified')}
-            - Completed Badges: {', '.join(user_data.get('completed_badges', []))}
-            - Completed Courses: {', '.join(user_data.get('completed_courses', []))}
-            - In Progress: {', '.join(user_data.get('in_progress_courses', []))}
-            
-            Career Preferences:
-            {career_preferences}
-
-            Provide 3 detailed career paths that would help this person achieve their goals.
-            """
-
+        # Use the MCP-based CareerAdvisor
+        if career_advisor:
             try:
-                response = planner.llm.generate(user_prompt, system_prompt, temperature=0.7)
-                paths = json.loads(response)
-                return jsonify(paths)
-            except json.JSONDecodeError:
-                print("Failed to parse LLM response as JSON, falling back to sample paths")
-        # In a real implementation, this would use the LLM to generate paths
+                career_paths = await career_advisor.get_career_paths(user_data, career_preferences)
+                return jsonify(career_paths)
+            except Exception as e:
+                print(f"Error calling MCP CareerAdvisor: {e}")
+                # Fall through to sample data
+        
+        # Fallback to sample paths if MCP is not available
         sample_paths = [
             {
-                'description': f'Machine Learning Engineering Path: This path builds on your {user_data["job_title"]} background and focuses on machine learning engineering skills.',
+                'description': f'Machine Learning Engineering Path: This path builds on your {user_data.get("job_title", "current")} background and focuses on machine learning engineering skills.',
                 'courses': [
                     {
                         'id': 'python_advanced',
@@ -211,7 +210,7 @@ def get_career_paths():
                 ]
             },
             {
-                'description': f'Full Stack AI Development Path: This path combines your {user_data["job_title"]} experience with full-stack development and AI integration skills.',
+                'description': f'Full Stack AI Development Path: This path combines your {user_data.get("job_title", "current")} experience with full-stack development and AI integration skills.',
                 'courses': [
                     {
                         'id': 'web_dev_advanced',
@@ -254,51 +253,6 @@ def get_career_paths():
                     'Deploy ML models as microservices',
                     'Complete a capstone project'
                 ]
-            },
-            {
-                'description': f'MLOps Engineering Path: This path focuses on the operational aspects of machine learning, perfect for someone with your {user_data["job_title"]} background who wants to specialize in ML infrastructure.',
-                'courses': [
-                    {
-                        'id': 'devops_fundamentals',
-                        'name': 'DevOps Fundamentals',
-                        'requiredOrder': 1
-                    },
-                    {
-                        'id': 'ml_ops',
-                        'name': 'Machine Learning Operations',
-                        'requiredOrder': 2
-                    },
-                    {
-                        'id': 'ml_monitoring',
-                        'name': 'ML Model Monitoring and Maintenance',
-                        'requiredOrder': 3
-                    }
-                ],
-                'badges': [
-                    {
-                        'id': 'devops_engineer',
-                        'name': 'DevOps Engineer',
-                        'requiredOrder': 1
-                    },
-                    {
-                        'id': 'mlops_specialist',
-                        'name': 'MLOps Specialist',
-                        'requiredOrder': 2
-                    },
-                    {
-                        'id': 'ml_reliability',
-                        'name': 'ML Reliability Engineer',
-                        'requiredOrder': 3
-                    }
-                ],
-                'estimatedTime': '7-9 months',
-                'milestones': [
-                    'Set up CI/CD pipelines for ML projects',
-                    'Deploy ML models to production',
-                    'Implement model monitoring systems',
-                    'Automate ML workflows',
-                    'Build scalable ML infrastructure'
-                ]
             }
         ]
         
@@ -308,7 +262,8 @@ def get_career_paths():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/career/refine', methods=['POST'])
-def refine_career_path():
+@async_route
+async def refine_career_path():
     try:
         from flask import request
         data = request.get_json()
@@ -321,10 +276,23 @@ def refine_career_path():
                 'error': 'Missing required fields: user_data, selected_path, and user_feedback'
             }), 400
 
-        # For now, return a slightly modified version of the selected path
-        # In a real implementation, this would use the LLM to refine the path
+        # Use the MCP-based CareerAdvisor
+        if career_advisor:
+            try:
+                refined_path = await career_advisor.refine_path(user_data, selected_path, user_feedback)
+                return jsonify(refined_path)
+            except Exception as e:
+                print(f"Error calling MCP CareerAdvisor refine_path: {e}")
+                # Fall through to simple response
+
+        # Fallback: return a slightly modified version of the selected path
         refined_path = selected_path.copy()
         refined_path['description'] = f'Refined path based on your feedback: {user_feedback}'
+        refined_path['refinement_notes'] = [
+            'Adjusted based on your specific requirements',
+            'Timeline may be modified to fit your schedule',
+            'Additional resources will be provided'
+        ]
         
         return jsonify(refined_path)
     except Exception as e:
